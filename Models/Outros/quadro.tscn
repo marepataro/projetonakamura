@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://c7hs40kh5f8fj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_at5bi"]
+resource_name = "Design sem nome"
+cull_mode = 2
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_156f3"]
+_surfaces = [{
+"aabb": AABB(-11.188503, 0, -7.910272, 22.377007, 1e-05, 15.820544),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 3, 0, 1, 0),
+"name": "Design sem nome",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 255, 255, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_h0b2r"]
+resource_name = "QUARTO escala aplicada_Design sem nome"
+_surfaces = [{
+"aabb": AABB(-11.188503, 0, -7.910272, 22.377007, 1e-05, 15.820544),
+"attribute_data": PackedByteArray(0, 0, 255, 255, 255, 255, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 0, 0, 3, 0, 1, 0),
+"material": SubResource("StandardMaterial3D_at5bi"),
+"name": "Design sem nome",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(255, 255, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 255, 255, 0, 0, 255, 255, 255, 255, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191, 255, 127, 255, 191)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_156f3")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_h0b2r"]
+size = Vector3(1.8000001, 1.25, 0.08)
+
+[node name="Quadro" type="StaticBody3D" unique_id=1455696702]
+
+[node name="Quadro " type="MeshInstance3D" parent="." unique_id=1510794661]
+transform = Transform3D(-0.07999218, -0.00066997553, 0.000898447, 0.0008953274, 0.00037504802, 0.079994105, -0.0006741397, 0.079996325, -0.00036751223, -0.003020227, -0.004041141, 0.0042201243)
+mesh = SubResource("ArrayMesh_h0b2r")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=246066159]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.9802322e-08, -0.014999986, 0.01000002)
+shape = SubResource("BoxShape3D_h0b2r")

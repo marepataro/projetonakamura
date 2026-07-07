@@ -1,0 +1,402 @@
+[gd_scene format=3 uid="uid://b6hdur71kably"]
+
+[ext_resource type="Material" uid="uid://b8mixapm50jjw" path="res://assets/Parede quarto.tres" id="1_8ncq5"]
+[ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_8kwb5"]
+[ext_resource type="PackedScene" uid="uid://cwwn68pubel54" path="res://Models/Conjunto cama/cama.tscn" id="2_m1hkd"]
+[ext_resource type="PackedScene" uid="uid://tl1tq7ngt653" path="res://Models/Conjunto cama/almofada.tscn" id="3_k26n4"]
+[ext_resource type="PackedScene" uid="uid://c47jnbga05gxq" path="res://Models/Conjunto estante/Vaso.tscn" id="3_s5j6r"]
+[ext_resource type="Script" uid="uid://brexwcg11omyp" path="res://Interact/dialogues.gd" id="4_m1hkd"]
+[ext_resource type="PackedScene" uid="uid://bjmosamos4gp" path="res://Models/Conjunto cama/chave.tscn" id="4_r1plc"]
+[ext_resource type="PackedScene" uid="uid://b3hkkb8xi2d5h" path="res://Models/Conjunto estante/estante.tscn" id="5_f5ryu"]
+[ext_resource type="Script" uid="uid://by8fmhpldj46a" path="res://addons/dialogue_nodes/objects/DialogueBox.gd" id="5_k26n4"]
+[ext_resource type="Resource" uid="uid://chgm2c1svntwv" path="res://Interact/Textos.tres" id="6_r1plc"]
+[ext_resource type="PackedScene" uid="uid://dwmyvun2ox5ng" path="res://Models/Conjunto armário/armário.tscn" id="6_rc00d"]
+[ext_resource type="PackedScene" uid="uid://kn8msap060dt" path="res://Models/Conjunto móvel/móvel.tscn" id="6_sro0o"]
+[ext_resource type="PackedScene" uid="uid://bewsbriglkgsf" path="res://Models/Conjunto estante/livro.tscn" id="7_1x4kn"]
+[ext_resource type="PackedScene" uid="uid://cadcuv5470sb5" path="res://Models/Conjunto armário/porta_armário.tscn" id="7_d82hk"]
+[ext_resource type="PackedScene" uid="uid://xyg83e87s17v" path="res://Models/Conjunto móvel/gaveta.tscn" id="7_xcb7i"]
+[ext_resource type="Script" uid="uid://m31i3axecagx" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="7_yco2t"]
+[ext_resource type="PackedScene" uid="uid://dkrpj78wiql4w" path="res://Models/Outros/janela.tscn" id="8_0vce4"]
+[ext_resource type="PackedScene" uid="uid://0l6lkgjjqk5v" path="res://Models/Conjunto estante/globo.tscn" id="8_hb20b"]
+[ext_resource type="PackedScene" uid="uid://bh5ynjjru2rvp" path="res://Models/Conjunto armário/vestido.tscn" id="8_pgf2v"]
+[ext_resource type="Script" uid="uid://blmdt7v8bd0nl" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="8_tlvlh"]
+[ext_resource type="PackedScene" uid="uid://bk5r1bsdpg2ll" path="res://Models/Conjunto estante/matriosca.tscn" id="9_gewwi"]
+[ext_resource type="PackedScene" uid="uid://c7hs40kh5f8fj" path="res://Models/Outros/quadro.tscn" id="9_rc00d"]
+[ext_resource type="Script" uid="uid://bsoctnc26xumr" path="res://addons/dialogue_nodes/objects/bbcodeMatrix.gd" id="9_sro0o"]
+[ext_resource type="PackedScene" uid="uid://2o6dihsb66qx" path="res://Models/Outros/chinelo.tscn" id="10_d82hk"]
+[ext_resource type="PackedScene" uid="uid://bbhctky0i0vpd" path="res://Models/Conjunto estante/taxi.tscn" id="10_s0w2b"]
+[ext_resource type="PackedScene" uid="uid://3gakw053pha6" path="res://Models/Conjunto estante/perfume.tscn" id="11_dhvva"]
+[ext_resource type="PackedScene" uid="uid://t7ulmwia7jay" path="res://Models/Conjunto estante/pulseira.tscn" id="12_c4d3c"]
+[ext_resource type="PackedScene" uid="uid://b37l6nvkqlgty" path="res://Models/Conjunto estante/brincos.tscn" id="13_fqcl4"]
+[ext_resource type="PackedScene" uid="uid://direbw6q7ikle" path="res://Models/Conjunto estante/tablet.tscn" id="14_3cqi0"]
+[ext_resource type="PackedScene" uid="uid://yombkimylmlp" path="res://Models/Conjunto estante/câmera.tscn" id="15_dum1f"]
+[ext_resource type="PackedScene" uid="uid://bqcv65lej5ixh" path="res://Models/Conjunto estante/suculenta.tscn" id="16_rh6q5"]
+[ext_resource type="PackedScene" uid="uid://dd2bsqh6ya6co" path="res://Models/Conjunto estante/tomate.tscn" id="17_bgpsv"]
+[ext_resource type="PackedScene" uid="uid://dq517dhlk5irq" path="res://Models/Conjunto estante/máquina_de_escrever.tscn" id="18_gdbc1"]
+[ext_resource type="PackedScene" uid="uid://5ksgmstp3w7a" path="res://Models/Conjunto criado mudo/criado_mudo.tscn" id="24_gewwi"]
+[ext_resource type="PackedScene" uid="uid://blcuqyl8m3k4k" path="res://Models/Conjunto criado mudo/gaveta_criado_mudo.tscn" id="25_s0w2b"]
+[ext_resource type="Script" uid="uid://b5lsevewvdrev" path="res://Interact/Interact.gd" id="26_1x4kn"]
+
+[sub_resource type="Gradient" id="Gradient_18kp0"]
+offsets = PackedFloat32Array(0, 0.17759563, 0.76775956, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.15799773, 0.17962855, 0.21043935, 1, 0.7703825, 0.7732069, 0.7205377, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_gib8o"]
+gradient = SubResource("Gradient_18kp0")
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_18kp0"]
+sky_top_color = Color(0.31900004, 0.41525003, 0.55, 1)
+sky_horizon_color = Color(0.67, 0.55576503, 0.44889998, 1)
+ground_horizon_color = Color(0.67058825, 0.5568628, 0.44705883, 1)
+
+[sub_resource type="Sky" id="Sky_q3ojg"]
+sky_material = SubResource("ProceduralSkyMaterial_18kp0")
+
+[sub_resource type="Environment" id="Environment_18kp0"]
+background_mode = 2
+sky = SubResource("Sky_q3ojg")
+ambient_light_sky_contribution = 0.56
+tonemap_mode = 2
+tonemap_exposure = 1.2
+tonemap_white = 6.0
+adjustment_enabled = true
+adjustment_color_correction = SubResource("GradientTexture1D_gib8o")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8ncq5"]
+vertex_color_is_srgb = true
+albedo_color = Color(0.45, 0.366, 0.27, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s5j6r"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8kwb5"]
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.4509804, 0.3647059, 0.27058825, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m1hkd"]
+
+[sub_resource type="Animation" id="Animation_gewwi"]
+resource_name = "Criado mudo abrir"
+length = 1.5
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Gaveta criado mudo")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 2.2967167, 0.5229021, -2.7883902, 1.5, 1, 2.2967167, 0.5229021, -2.2883902)
+
+[sub_resource type="Animation" id="Animation_dhvva"]
+resource_name = "Criado mudo fechar"
+length = 1.5
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Gaveta criado mudo")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 2.2967167, 0.5229021, -2.2883902, 1.5, 1, 2.2967167, 0.5229021, -2.7883902)
+
+[sub_resource type="Animation" id="Animation_s0w2b"]
+length = 0.001
+tracks/0/type = "position_3d"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Gaveta criado mudo")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = PackedFloat32Array(0, 1, 2.2967167, 0.5229021, -2.7883902)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_dhvva"]
+_data = {
+&"Criado mudo abrir": SubResource("Animation_gewwi"),
+&"Criado mudo fechar": SubResource("Animation_dhvva"),
+&"RESET": SubResource("Animation_s0w2b")
+}
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_s0w2b"]
+animation = &"Criado mudo abrir"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_dhvva"]
+animation = &"Criado mudo fechar"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_c4d3c"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_fqcl4"]
+switch_mode = 2
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_3cqi0"]
+"states/Criado mudo abrir/node" = SubResource("AnimationNodeAnimation_s0w2b")
+"states/Criado mudo abrir/position" = Vector2(375, 94.448)
+"states/Criado mudo fechar/node" = SubResource("AnimationNodeAnimation_dhvva")
+"states/Criado mudo fechar/position" = Vector2(595, 94.159996)
+states/Start/position = Vector2(202.40001, 94.7584)
+transitions = ["Criado mudo abrir", "Criado mudo fechar", SubResource("AnimationNodeStateMachineTransition_c4d3c"), "Criado mudo fechar", "Criado mudo abrir", SubResource("AnimationNodeStateMachineTransition_fqcl4")]
+graph_offset = Vector2(97, 42)
+
+[sub_resource type="FontVariation" id="FontVariation_jp66c"]
+
+[sub_resource type="Theme" id="Theme_jp66c"]
+default_font = SubResource("FontVariation_jp66c")
+default_font_size = 20
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_jp66c"]
+script = ExtResource("7_yco2t")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_4e43v"]
+script = ExtResource("8_tlvlh")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_oe06i"]
+script = ExtResource("9_sro0o")
+
+[node name="Cena principal" type="Node3D" unique_id=2090727127]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1146051201]
+environment = SubResource("Environment_18kp0")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=242447460]
+transform = Transform3D(-1.3902973e-08, 0.5, -0.8660253, 2.4080654e-08, 0.8660253, 0.5, 1, -1.3902971e-08, -2.4080657e-08, -9.7, 8.4, 1.1)
+light_color = Color(1, 0.8980392, 0.8862745, 1)
+light_energy = 0.7
+shadow_enabled = true
+
+[node name="Estrutura do quarto" type="CSGCombiner3D" parent="." unique_id=778058204]
+use_collision = true
+
+[node name="ParedeCorredor1" type="CSGBox3D" parent="Estrutura do quarto" unique_id=782248438]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 1.4, 2.0500002)
+use_collision = true
+collision_mask = 1025
+size = Vector3(5.3, 3.6000001, 0.3)
+material = ExtResource("1_8ncq5")
+
+[node name="ParedeCorredor2" type="CSGBox3D" parent="Estrutura do quarto" unique_id=1974894407]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 1.4, -0.85)
+use_collision = true
+collision_mask = 1025
+size = Vector3(5.3, 3.6000001, 0.1)
+material = ExtResource("1_8ncq5")
+
+[node name="ParedeCorredor3" type="CSGBox3D" parent="Estrutura do quarto" unique_id=1756158787]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.55, 1.4, 0.64999974)
+use_collision = true
+size = Vector3(0.1, 3.6000001, 2.9)
+material = ExtResource("1_8ncq5")
+
+[node name="Buraco da porta Corredor" type="CSGBox3D" parent="Estrutura do quarto/ParedeCorredor3" unique_id=389863662]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4599998, 0)
+operation = 2
+size = Vector3(1, 2.7, 1.3000001)
+material = ExtResource("1_8ncq5")
+
+[node name="ChãoCorredor" type="CSGBox3D" parent="Estrutura do quarto" unique_id=1285816294]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, -0.45, 0.65)
+size = Vector3(5.3, 0.1, 3.1000001)
+material = SubResource("StandardMaterial3D_8ncq5")
+
+[node name="Teto Corredor" type="CSGBox3D" parent="Estrutura do quarto" unique_id=205301191]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 3.25, 0.65)
+size = Vector3(5.3, 0.1, 3.1000001)
+material = SubResource("StandardMaterial3D_s5j6r")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Estrutura do quarto/Teto Corredor" unique_id=1036660035]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.29999995, 0)
+light_color = Color(1, 0.8526667, 0.65999997, 1)
+shadow_enabled = true
+
+[node name="Chão" type="CSGBox3D" parent="Estrutura do quarto" unique_id=1106609847]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.45, 0.4000001)
+use_collision = true
+size = Vector3(6.6, 0.1, 7.4)
+material = SubResource("StandardMaterial3D_8kwb5")
+
+[node name="Parede1" type="CSGBox3D" parent="Estrutura do quarto" unique_id=1849328598]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.2500002, 1.35, 0.39999998)
+use_collision = true
+size = Vector3(0.1, 3.7, 7.4)
+material = ExtResource("1_8ncq5")
+
+[node name="Buraco da porta" type="CSGBox3D" parent="Estrutura do quarto/Parede1" unique_id=1266485301]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.41999996, 0.13000011)
+operation = 2
+size = Vector3(1, 2.7, 1.3000001)
+material = ExtResource("1_8ncq5")
+
+[node name="Parede2" type="CSGBox3D" parent="Estrutura do quarto" unique_id=788268448]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1920929e-07, 1.35, -3.25)
+use_collision = true
+size = Vector3(6.4, 3.7, 0.1)
+material = ExtResource("1_8ncq5")
+
+[node name="Parede3" type="CSGBox3D" parent="Estrutura do quarto" unique_id=1922557804]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.25, 1.35, 0.4000001)
+use_collision = true
+size = Vector3(0.1, 3.7, 7.4)
+material = ExtResource("1_8ncq5")
+
+[node name="Buraco janela" type="CSGBox3D" parent="Estrutura do quarto/Parede3" unique_id=608836936]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34691155, 0.02520132)
+operation = 2
+size = Vector3(1, 1.4938233, 2.7130249)
+material = ExtResource("1_8ncq5")
+
+[node name="Parede4" type="CSGBox3D" parent="Estrutura do quarto" unique_id=172151177]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 1.35, 4.05)
+use_collision = true
+size = Vector3(6.4, 3.7, 0.1)
+material = ExtResource("1_8ncq5")
+
+[node name="Teto Quarto" type="CSGBox3D" parent="Estrutura do quarto" unique_id=1764654291]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.25, 0.4000002)
+use_collision = true
+size = Vector3(6.6, 0.1, 7.4)
+material = SubResource("StandardMaterial3D_m1hkd")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Estrutura do quarto/Teto Quarto" unique_id=1296405300]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.29999995, 0)
+light_color = Color(1, 0.8526667, 0.65999997, 1)
+light_energy = 2.0
+shadow_enabled = true
+
+[node name="Conjunto cama" type="CSGCombiner3D" parent="." unique_id=774403651]
+
+[node name="Cama" parent="Conjunto cama" unique_id=2095819401 instance=ExtResource("2_m1hkd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.63, -0.44, -1.72)
+
+[node name="Almofada" parent="Conjunto cama" unique_id=913111947 instance=ExtResource("3_k26n4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0.8, -2)
+
+[node name="Chave" parent="Conjunto cama" unique_id=493095177 instance=ExtResource("4_r1plc")]
+
+[node name="Conjunto Estante" type="CSGCombiner3D" parent="." unique_id=1548671440]
+
+[node name="Estante" parent="Conjunto Estante" unique_id=1520195128 instance=ExtResource("5_f5ryu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.495, -0.322, 2.91)
+
+[node name="Vaso" parent="Conjunto Estante" unique_id=1025840361 instance=ExtResource("3_s5j6r")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5118653, 2.4393451, 3.6709473)
+prompt_message = "Vaso"
+
+[node name="Livro" parent="Conjunto Estante" unique_id=1835349336 instance=ExtResource("7_1x4kn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.316869, 2.3735352, 3.6193633)
+
+[node name="Globo" parent="Conjunto Estante" unique_id=1269840124 instance=ExtResource("8_hb20b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6184175, 1.8797033, 3.5103676)
+
+[node name="Matriosca" parent="Conjunto Estante" unique_id=154100543 instance=ExtResource("9_gewwi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9847023, 1.9253112, 3.5278792)
+script = ExtResource("26_1x4kn")
+prompt_message = "Matriosca"
+
+[node name="Taxi" parent="Conjunto Estante" unique_id=1240652307 instance=ExtResource("10_s0w2b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2543585, 1.7378354, 3.491833)
+
+[node name="Perfume" parent="Conjunto Estante" unique_id=1533123941 instance=ExtResource("11_dhvva")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6295408, 1.0383114, 3.51247)
+script = ExtResource("26_1x4kn")
+prompt_message = "Perfume"
+
+[node name="Pulseira" parent="Conjunto Estante" unique_id=305192303 instance=ExtResource("12_c4d3c")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5942032, 1.0396112, 3.3549201)
+
+[node name="Brincos" parent="Conjunto Estante" unique_id=1058271882 instance=ExtResource("13_fqcl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6197371, 1.0465986, 3.342706)
+
+[node name="Tablet" parent="Conjunto Estante" unique_id=1453306082 instance=ExtResource("14_3cqi0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.9286687, 1.0380287, 3.5018263)
+
+[node name="Câmera" parent="Conjunto Estante" unique_id=815235701 instance=ExtResource("15_dum1f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.234082, 1.1230032, 3.338253)
+
+[node name="Suculenta" parent="Conjunto Estante" unique_id=1092440907 instance=ExtResource("16_rh6q5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5806043, 0.49812192, 3.4831848)
+
+[node name="Tomate" parent="Conjunto Estante" unique_id=2086838803 instance=ExtResource("17_bgpsv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6922889, 0.42991823, 3.2259653)
+
+[node name="Máquina de escrever" parent="Conjunto Estante" unique_id=1795473698 instance=ExtResource("18_gdbc1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1226168, 0.39125907, 3.2824)
+script = ExtResource("26_1x4kn")
+prompt_message = "Máquina de escrever"
+
+[node name="Conjunto Armário" type="CSGCombiner3D" parent="." unique_id=662692195]
+
+[node name="Armário" parent="Conjunto Armário" unique_id=1877119163 instance=ExtResource("6_rc00d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6498577, 1.195387, 3.642766)
+
+[node name="Porta armário" parent="Conjunto Armário" unique_id=819202271 instance=ExtResource("7_d82hk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.9, 1.195, 3.133)
+
+[node name="Vestido" parent="Conjunto Armário" unique_id=172747933 instance=ExtResource("8_pgf2v")]
+
+[node name="Conjunto móvel" type="CSGCombiner3D" parent="." unique_id=589146083]
+
+[node name="Móvel" parent="Conjunto móvel" unique_id=218435020 instance=ExtResource("6_sro0o")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.641092, -0.39602482, 0.3953346)
+
+[node name="Gaveta" parent="Conjunto móvel" unique_id=556676915 instance=ExtResource("7_xcb7i")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.637012, 0.71484804, -0.26420274)
+
+[node name="Conjunto criado mudo" type="CSGCombiner3D" parent="." unique_id=1212602888]
+
+[node name="Criado mudo" parent="Conjunto criado mudo" unique_id=1472946297 instance=ExtResource("24_gewwi")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2927155, -0.20618093, -3.1269634)
+
+[node name="Gaveta criado mudo" parent="Conjunto criado mudo" unique_id=1712197149 instance=ExtResource("25_s0w2b")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2967167, 0.5229021, -2.7883902)
+script = ExtResource("26_1x4kn")
+prompt_message = "Criado mudo"
+
+[node name="Animação criado mudo" type="AnimationPlayer" parent="Conjunto criado mudo" unique_id=1708701359]
+libraries/ = SubResource("AnimationLibrary_dhvva")
+
+[node name="AnimationTree" type="AnimationTree" parent="Conjunto criado mudo" unique_id=1075382533]
+tree_root = SubResource("AnimationNodeStateMachine_3cqi0")
+anim_player = NodePath("../Animação criado mudo")
+
+[node name="Janela" parent="." unique_id=1489983787 instance=ExtResource("8_0vce4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2291603, 0.6880157, 0.38646984)
+
+[node name="Quadro" parent="." unique_id=1455696702 instance=ExtResource("9_rc00d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14996684, 2.1000001, -3.18)
+script = ExtResource("26_1x4kn")
+prompt_message = "Mapa-múndi"
+
+[node name="Chinelo" parent="." unique_id=1940150175 instance=ExtResource("10_d82hk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0669463, -0.4, -0.51960236)
+
+[node name="Player" parent="." unique_id=1931009505 instance=ExtResource("2_8kwb5")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.9, -0.4, 0.8)
+can_jump = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1620837965]
+script = ExtResource("4_m1hkd")
+
+[node name="DialogueBox" type="Panel" parent="CanvasLayer" unique_id=1696492300]
+visible = false
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 410.0
+offset_top = -162.0
+offset_right = -410.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_jp66c")
+script = ExtResource("5_k26n4")
+data = ExtResource("6_r1plc")
+hide_portrait = true
+custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_jp66c"), SubResource("RichTextEffect_4e43v"), SubResource("RichTextEffect_oe06i")])
+max_options_count = 2
+metadata/_custom_type_script = "uid://by8fmhpldj46a"
+
+[connection signal="interacted" from="Conjunto Estante/Vaso" to="CanvasLayer" method="_on_vaso_interacted"]
+[connection signal="interacted" from="Conjunto Estante/Matriosca" to="CanvasLayer" method="_on_matriosca_interacted"]
+[connection signal="interacted" from="Conjunto Estante/Perfume" to="CanvasLayer" method="_on_perfume_interacted"]
+[connection signal="interacted" from="Conjunto Estante/Máquina de escrever" to="CanvasLayer" method="_on_máquina_de_escrever_interacted"]
+[connection signal="interacted" from="Conjunto criado mudo/Gaveta criado mudo" to="Conjunto criado mudo/Criado mudo" method="gaveta_criado_mudo"]
+[connection signal="interacted" from="Quadro" to="CanvasLayer" method="_on_quadro_interacted"]
+[connection signal="dialogue_ended" from="CanvasLayer/DialogueBox" to="CanvasLayer" method="_on_dialogue_box_dialogue_ended"]
