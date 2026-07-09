@@ -31,11 +31,13 @@ func _on_máquina_de_escrever_interacted(body):
 	body.set_process_input(false)
 	player = body
 
+func _on_vestido_interacted(body):
+	$DialogueBox.start("VESTIDO")
+	body.set_physics_process(false)
+	body.set_process_input(false)
+	player = body
+
 func _on_dialogue_box_dialogue_ended():
 	player.set_physics_process(true)
 	player.set_process_input(true)
 	player = null
-	
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.

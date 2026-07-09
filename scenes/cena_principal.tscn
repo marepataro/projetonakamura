@@ -268,21 +268,6 @@ animation = &"porta fechar"
 "states/porta fechar/node" = SubResource("AnimationNodeAnimation_nq76y")
 "states/porta fechar/position" = Vector2(478, 117.6)
 
-[sub_resource type="FontVariation" id="FontVariation_jp66c"]
-
-[sub_resource type="Theme" id="Theme_jp66c"]
-default_font = SubResource("FontVariation_jp66c")
-default_font_size = 20
-
-[sub_resource type="RichTextEffect" id="RichTextEffect_jp66c"]
-script = ExtResource("7_yco2t")
-
-[sub_resource type="RichTextEffect" id="RichTextEffect_4e43v"]
-script = ExtResource("8_tlvlh")
-
-[sub_resource type="RichTextEffect" id="RichTextEffect_oe06i"]
-script = ExtResource("9_sro0o")
-
 [sub_resource type="BoxShape3D" id="BoxShape3D_s0w2b"]
 size = Vector3(0.31878662, 2.6462402, 1.6524658)
 
@@ -388,6 +373,21 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_fdw6u")
 
+[sub_resource type="FontVariation" id="FontVariation_jp66c"]
+
+[sub_resource type="Theme" id="Theme_jp66c"]
+default_font = SubResource("FontVariation_jp66c")
+default_font_size = 20
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_jp66c"]
+script = ExtResource("7_yco2t")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_4e43v"]
+script = ExtResource("8_tlvlh")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_oe06i"]
+script = ExtResource("9_sro0o")
+
 [node name="Cena principal" type="Node3D" unique_id=2090727127]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1146051201]
@@ -451,6 +451,10 @@ material = SubResource("StandardMaterial3D_8kwb5")
 
 [node name="Parede1" parent="Estrutura do quarto" unique_id=347257263 instance=ExtResource("2_s0w2b")]
 transform = Transform3D(1, 0.00017453292, 0, -0.00017453292, 1, 0, 0, 0, 1, 3.2500002, 1.35, 0.39999998)
+
+[node name="Buraco da porta" parent="Estrutura do quarto/Parede1" index="0" unique_id=242376965]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4851429, 0.13197762)
+size = Vector3(1, 2.5697143, 1.2822754)
 
 [node name="Parede2" type="CSGBox3D" parent="Estrutura do quarto" unique_id=788268448]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1920929e-07, 1.35, -3.25)
@@ -563,7 +567,7 @@ prompt_message = "Máquina de escrever"
 script = ExtResource("22_fqcl4")
 
 [node name="Armário" parent="Conjunto Armário" unique_id=1877119163 instance=ExtResource("6_rc00d")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6498577, 1.195387, 3.642766)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6500556, 1.1926023, 3.642076)
 
 [node name="Porta armário" parent="Conjunto Armário" unique_id=819202271 instance=ExtResource("7_d82hk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.902, 1.194, 3.126)
@@ -571,6 +575,9 @@ script = ExtResource("26_1x4kn")
 prompt_message = "Armário"
 
 [node name="Vestido" parent="Conjunto Armário" unique_id=172747933 instance=ExtResource("8_pgf2v")]
+transform = Transform3D(0.049175493, 0, -0.07537753, 0, 0.09000001, 0, 0.07537753, 0, 0.049175493, -1.2448134, -0.18167329, 3.5690076)
+script = ExtResource("26_1x4kn")
+prompt_message = "Vestido"
 
 [node name="Animação armário" type="AnimationPlayer" parent="Conjunto Armário" unique_id=1156939014]
 libraries/ = SubResource("AnimationLibrary_bgpsv")
@@ -609,7 +616,7 @@ anim_player = NodePath("../Animação criado mudo")
 script = ExtResource("31_dum1f")
 
 [node name="Porta2" parent="Conjunto porta" unique_id=1131692515 instance=ExtResource("31_3cqi0")]
-transform = Transform3D(-1, 0.00017453292, 3.8941437e-07, 0.00017453292, 1, -6.796563e-11, -3.8941437e-07, -6.938894e-18, -1, 3.199321, -0.41293272, 1.1734848)
+transform = Transform3D(-1, 0.00017453292, 3.8941437e-07, 0.00017453292, 1, -6.796563e-11, -3.8941437e-07, -6.938894e-18, -1, 3.218, -0.413, 1.183)
 script = ExtResource("26_1x4kn")
 prompt_message = "Porta"
 
@@ -619,6 +626,18 @@ libraries/ = SubResource("AnimationLibrary_gdbc1")
 [node name="AnimationTree" type="AnimationTree" parent="Conjunto porta" unique_id=1467241988]
 tree_root = SubResource("AnimationNodeStateMachine_obrkc")
 anim_player = NodePath("../Animação porta")
+
+[node name="Porta" type="StaticBody3D" parent="." unique_id=162211363]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.142516, 0, 0)
+disable_mode = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Porta" unique_id=1466961183]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4413395, 1.0124946, 0.5452877)
+shape = SubResource("BoxShape3D_s0w2b")
+
+[node name="Porta" type="MeshInstance3D" parent="Porta/CollisionShape3D" unique_id=1381862702]
+transform = Transform3D(-0.054, 0, 2.1028377e-08, 0, 0.054, 0, -2.1028377e-08, 0, -0.054, -0.019639969, -1.4009693, 0.7325268)
+mesh = SubResource("ArrayMesh_fpgfc")
 
 [node name="Janela" parent="." unique_id=1489983787 instance=ExtResource("8_0vce4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2291603, 0.6880157, 0.38646984)
@@ -657,24 +676,13 @@ custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_jp66c"), Sub
 max_options_count = 2
 metadata/_custom_type_script = "uid://by8fmhpldj46a"
 
-[node name="Porta" type="StaticBody3D" parent="." unique_id=162211363]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.142516, 0, 0)
-disable_mode = 1
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Porta" unique_id=1466961183]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4413395, 1.0124946, 0.5452877)
-shape = SubResource("BoxShape3D_s0w2b")
-
-[node name="Porta" type="MeshInstance3D" parent="Porta/CollisionShape3D" unique_id=1381862702]
-transform = Transform3D(-0.054, 0, 2.1028377e-08, 0, 0.054, 0, -2.1028377e-08, 0, -0.054, -0.019639969, -1.4009693, 0.7325268)
-mesh = SubResource("ArrayMesh_fpgfc")
-
 [connection signal="interacted" from="Conjunto cama/Almofada" to="Conjunto cama" method="almofada"]
 [connection signal="interacted" from="Conjunto Estante/Vaso" to="CanvasLayer" method="_on_vaso_interacted"]
 [connection signal="interacted" from="Conjunto Estante/Matriosca" to="CanvasLayer" method="_on_matriosca_interacted"]
 [connection signal="interacted" from="Conjunto Estante/Perfume" to="CanvasLayer" method="_on_perfume_interacted"]
 [connection signal="interacted" from="Conjunto Estante/Máquina de escrever" to="CanvasLayer" method="_on_máquina_de_escrever_interacted"]
 [connection signal="interacted" from="Conjunto Armário/Porta armário" to="Conjunto Armário" method="porta_armario"]
+[connection signal="interacted" from="Conjunto Armário/Vestido" to="CanvasLayer" method="_on_vestido_interacted"]
 [connection signal="interacted" from="Conjunto criado mudo/Gaveta criado mudo" to="Conjunto criado mudo" method="gaveta_criado_mudo"]
 [connection signal="interacted" from="Conjunto porta/Porta2" to="Conjunto porta" method="porta"]
 [connection signal="interacted" from="Quadro" to="CanvasLayer" method="_on_quadro_interacted"]

@@ -9,7 +9,8 @@ starts = {
 "MATRIOSCA": &"0_3",
 "PERFUME": &"0_4",
 "QUADRO": &"0_2",
-"VASO": &"0_1"
+"VASO": &"0_1",
+"VESTIDO": &"0_6"
 }
 nodes = {
 &"0_1": {
@@ -37,6 +38,11 @@ nodes = {
 "offset": Vector2(-60, 1440),
 "start_id": "MAQUINA"
 },
+&"0_6": {
+"link": &"1_8",
+"offset": Vector2(-60, 1780),
+"start_id": "VESTIDO"
+},
 &"1_1": {
 "dialogue": "Ninguém agua essa planta faz muito tempo…",
 "offset": Vector2(220, 100),
@@ -47,7 +53,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(439.9996, 326),
+"size": Vector2(439.9997, 326),
 "speaker": ""
 },
 &"1_2": {
@@ -60,7 +66,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(420.0001, 286.0001),
+"size": Vector2(420.00018, 286.00006),
 "speaker": ""
 },
 &"1_3": {
@@ -74,7 +80,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.00006, 286.0001),
+"size": Vector2(300.00003, 286.00006),
 "speaker": ""
 },
 &"1_4": {
@@ -87,7 +93,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(420.0001, 246.0003),
+"size": Vector2(420.00018, 286.00006),
 "speaker": ""
 },
 &"1_5": {
@@ -100,7 +106,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(419.99997, 260),
+"size": Vector2(419.99994, 286.00006),
 "speaker": ""
 },
 &"1_6": {
@@ -113,7 +119,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(419.99997, 246),
+"size": Vector2(419.99994, 286.00006),
 "speaker": ""
 },
 &"1_7": {
@@ -126,7 +132,20 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300, 246),
+"size": Vector2(300.00003, 286.00006),
+"speaker": ""
+},
+&"1_8": {
+"dialogue": "Ah, esse era o vestido favorito dela. Ela sempre o usava no aniversário dela. Olhando para ele agora, pendurado no cabide, algo parece estranho…",
+"offset": Vector2(240, 1780),
+"options": {
+0: {
+"condition": Array[Dictionary]([]),
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(420.00018, 246.00006),
 "speaker": ""
 }
 }
