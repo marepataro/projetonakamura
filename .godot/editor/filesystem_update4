@@ -1,2 +1,4 @@
-res://scenes/parede_com_porta.tscn
 res://scenes/cena_principal.tscn
+res://Models/Outros/porta_2.tscn
+res://scenes/Animação porta.gd
+res://scenes/parede_com_porta.tscn

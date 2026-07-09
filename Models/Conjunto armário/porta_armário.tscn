@@ -88,8 +88,8 @@ size = Vector3(1.2466125, 2.8461914, 0.052978516)
 transform = Transform3D(0.09493047, 0, 0.0036339452, 0, 0.095, 0, -0.0036339452, 0, 0.09493047, -0.0056710243, 0, -0.005449772)
 mesh = SubResource("ArrayMesh_amfty")
 
-[node name="puxado direita_002" type="MeshInstance3D" parent="Porta_Direita" unique_id=724696057]
-transform = Transform3D(0.4, 0, 0, 0, 0, -0.39999998, 0, 0.3, 0, 11.7, 0, -0.15000087)
+[node name="puxado direita_002" type="MeshInstance3D" parent="." unique_id=724696057]
+transform = Transform3D(0.03797219, 0.0010901836, 0, 0, 0, -0.038, -0.0014535781, 0.028479142, 0, 1.1044703, 0, -0.062206585)
 mesh = SubResource("ArrayMesh_i2btu")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=1178805551]

@@ -1,4 +1,4 @@
-extends StaticBody3D
+extends CSGCombiner3D
 @export var open = false
 var playback = null
 
@@ -10,10 +10,8 @@ func gaveta_criado_mudo(_body):
 	
 	if open:
 		playback.travel("Criado mudo abrir")
+		print("abrir")
 	else:
 		playback.travel("Criado mudo fechar")
+		print("fechar")
 	
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
