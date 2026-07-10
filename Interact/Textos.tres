@@ -5,6 +5,7 @@
 [resource]
 script = ExtResource("1_dpavk")
 starts = {
+"CHAVE": &"0_7",
 "MAQUINA": &"0_5",
 "MATRIOSCA": &"0_3",
 "PERFUME": &"0_4",
@@ -43,8 +44,14 @@ nodes = {
 "offset": Vector2(-60, 1780),
 "start_id": "VESTIDO"
 },
+&"0_7": {
+"link": &"1_9",
+"offset": Vector2(-60, 2120),
+"start_id": "CHAVE"
+},
 &"1_1": {
-"dialogue": "Ninguém agua essa planta faz muito tempo…",
+"dialogue": "Ninguém agua essa planta faz muito tempo… 
+(espaço)",
 "offset": Vector2(220, 100),
 "options": {
 0: {
@@ -53,11 +60,26 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(439.9997, 326),
+"size": Vector2(439.99973, 325.99994),
+"speaker": ""
+},
+&"1_10": {
+"dialogue": "Uma pena que as coisas tenham terminado daquela forma naquela estrada... Uma pena que ela tenha batido o carro.
+(espaço)",
+"offset": Vector2(700, 2120),
+"options": {
+0: {
+"condition": Array[Dictionary]([]),
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(300.0001, 246.00024),
 "speaker": ""
 },
 &"1_2": {
-"dialogue": "Um enorme mapa na parede, cheio de alfinetes vermelhos marcando os lugares que ela ainda queria conhecer.",
+"dialogue": "Um enorme mapa na parede, cheio de alfinetes vermelhos marcando os lugares que ela ainda queria conhecer. 
+(espaço)",
 "offset": Vector2(240, 480),
 "options": {
 0: {
@@ -66,11 +88,12 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(420.00018, 286.00006),
+"size": Vector2(419.99997, 286.00018),
 "speaker": ""
 },
 &"1_3": {
-"dialogue": " O alfinete mais recente está cravado bem em cima de uma rota de estrada... uma viagem que ela nunca chegou a fazer.
+"dialogue": " O alfinete mais recente está cravado bem em cima de uma rota de estrada... uma viagem que ela nunca chegou a fazer. 
+(espaço)
 ",
 "offset": Vector2(700, 480),
 "options": {
@@ -80,11 +103,12 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.00003, 286.00006),
+"size": Vector2(300.0001, 286.00018),
 "speaker": ""
 },
 &"1_4": {
-"dialogue": "Uma boneca dentro da outra, que gracinha.",
+"dialogue": "Uma boneca dentro da outra, que gracinha. 
+(espaço)",
 "offset": Vector2(240, 820),
 "options": {
 0: {
@@ -93,11 +117,12 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(420.00018, 286.00006),
+"size": Vector2(419.99997, 286.00012),
 "speaker": ""
 },
 &"1_5": {
-"dialogue": "O borrifador ainda guarda o aroma de jasmim. Fecho os olhos e, por um segundo, ela está aqui.",
+"dialogue": "O borrifador ainda guarda o aroma de jasmim. Fecho os olhos e, por um segundo, ela está aqui. 
+(espaço)",
 "offset": Vector2(240, 1120),
 "options": {
 0: {
@@ -106,11 +131,12 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(419.99994, 286.00006),
+"size": Vector2(419.99973, 285.99982),
 "speaker": ""
 },
 &"1_6": {
-"dialogue": "Ela adorava ler e escrever, e o grande sonho dela era publicar um livro autoral.",
+"dialogue": "Ela adorava ler e escrever, e o grande sonho dela era publicar um livro autoral.
+(espaço)",
 "offset": Vector2(240, 1440),
 "options": {
 0: {
@@ -119,11 +145,12 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(419.99994, 286.00006),
+"size": Vector2(419.99973, 286),
 "speaker": ""
 },
 &"1_7": {
-"dialogue": "A folha ainda está no rolo, mas a história parou na metade do capítulo.",
+"dialogue": "A folha ainda está no rolo, mas a história parou na metade do capítulo. 
+(espaço)",
 "offset": Vector2(700, 1440),
 "options": {
 0: {
@@ -132,11 +159,12 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.00003, 286.00006),
+"size": Vector2(300.0001, 286),
 "speaker": ""
 },
 &"1_8": {
-"dialogue": "Ah, esse era o vestido favorito dela. Ela sempre o usava no aniversário dela. Olhando para ele agora, pendurado no cabide, algo parece estranho…",
+"dialogue": "Ah, esse era o vestido favorito dela. Ela sempre o usava no aniversário dela. Olhando para ele agora, pendurado no cabide, algo parece estranho… 
+(espaço)",
 "offset": Vector2(240, 1780),
 "options": {
 0: {
@@ -145,7 +173,21 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(420.00018, 246.00006),
+"size": Vector2(419.99997, 286.00012),
+"speaker": ""
+},
+&"1_9": {
+"dialogue": "Achei a chave do carro... Ela está um pouco arranhada.  Olhar para esse metal me traz um aperto enorme no peito.
+(espaço)",
+"offset": Vector2(240, 2120),
+"options": {
+0: {
+"condition": Array[Dictionary]([]),
+"link": &"1_10",
+"text": ""
+}
+},
+"size": Vector2(419.99997, 246.00024),
 "speaker": ""
 }
 }

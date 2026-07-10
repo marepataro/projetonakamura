@@ -504,6 +504,9 @@ script = ExtResource("26_1x4kn")
 prompt_message = "Almofada"
 
 [node name="Chave" parent="Conjunto cama" unique_id=493095177 instance=ExtResource("4_r1plc")]
+transform = Transform3D(0.85349625, 0, -0.521099, 0, 1, 0, 0.521099, 0, 0.85349625, 0.7350048, 0.66785717, -1.9088482)
+script = ExtResource("26_1x4kn")
+prompt_message = "Chave do carro"
 
 [node name="Animação almofada" type="AnimationPlayer" parent="Conjunto cama" unique_id=158293084]
 libraries/ = SubResource("AnimationLibrary_3cqi0")
@@ -677,6 +680,7 @@ max_options_count = 2
 metadata/_custom_type_script = "uid://by8fmhpldj46a"
 
 [connection signal="interacted" from="Conjunto cama/Almofada" to="Conjunto cama" method="almofada"]
+[connection signal="interacted" from="Conjunto cama/Chave" to="CanvasLayer" method="_on_chave_interacted"]
 [connection signal="interacted" from="Conjunto Estante/Vaso" to="CanvasLayer" method="_on_vaso_interacted"]
 [connection signal="interacted" from="Conjunto Estante/Matriosca" to="CanvasLayer" method="_on_matriosca_interacted"]
 [connection signal="interacted" from="Conjunto Estante/Perfume" to="CanvasLayer" method="_on_perfume_interacted"]

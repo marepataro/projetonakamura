@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1783655360
+::res://::1783712710
 icon.svg::CompressedTexture2D::7081393343536532460::1783548132::1783549470::1::::<><><>0<>0<>c01b6b2a83ce2b16dbc2d1c633949e60<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 sobreoprojeto.md::TextFile::-1::1783548132::0::1::::<><><>0<>0<><>::
 ::res://addons/::1783548132
@@ -75,12 +75,12 @@ option.gd::GDScript::335964613877623215::1783548132::0::1::::<>HBoxContainer<><>
 bbcodeGhost.gd::GDScript::3183488292511616945::1783548132::0::1::::RichTextGhost<>RichTextEffect<><>0<>1<><>::
 bbcodeMatrix.gd::GDScript::3678877208966517889::1783548132::0::1::::RichTextMatrix<>RichTextEffect<><>0<>1<><>::
 bbcodeWait.gd::GDScript::901663100637472531::1783548132::0::1::::RichTextWait<>RichTextEffect<><>0<>1<><>::
-Character.gd::GDScript::2091361252970879162::1783548132::0::1::::Character<>Resource<>res://addons/dialogue_nodes/icons/Character.svg<>0<>0<><>::
-CharacterList.gd::GDScript::8405535876014151550::1783548132::0::1::::CharacterList<>Resource<>res://addons/dialogue_nodes/icons/CharacterList.svg<>0<>0<><>::
+Character.gd::GDScript::2091361252970879162::1783548132::0::1::::Character<>Resource<><>0<>0<><>::
+CharacterList.gd::GDScript::8405535876014151550::1783548132::0::1::::CharacterList<>Resource<><>0<>0<><>::
 DialogueBox.gd::GDScript::4139402802720246186::1783548132::0::1::::DialogueBox<>Panel<><>0<>1<><>::
 DialogueBubble.gd::GDScript::7799083637361349646::1783548132::0::1::::DialogueBubble<>RichTextLabel<><>0<>1<><>::
-DialogueData.gd::GDScript::298477498930471214::1783548132::0::1::::DialogueData<>Resource<>res://addons/dialogue_nodes/icons/Dialogue.svg<>0<>0<><>::
-DialogueParser.gd::GDScript::6752668751973192376::1783548132::0::1::::DialogueParser<>Node<>res://addons/dialogue_nodes/icons/DialogueParser.svg<>0<>1<><>::
+DialogueData.gd::GDScript::298477498930471214::1783548132::0::1::::DialogueData<>Resource<><>0<>0<><>::
+DialogueParser.gd::GDScript::6752668751973192376::1783548132::0::1::::DialogueParser<>Node<><>0<>1<><>::
 ::res://addons/dialogue_nodes/themes/::1783549470
 bubbly.theme::Theme::7363804108063196893::1783548132::0::1::::<><><>0<>0<><>::uid://b1bq3eoec0j1b::::res://addons/dialogue_nodes/themes/Poppins-Regular.ttf<>uid://dv4rnn0ml62q3::::res://addons/dialogue_nodes/themes/Poppins-Bold.ttf<>uid://bhtf12vvs2yjq::::res://addons/dialogue_nodes/themes/Poppins-BoldItalic.ttf<>uid://bcg26eik2m2o8::::res://addons/dialogue_nodes/themes/Poppins-Italic.ttf
 bubblyClean.theme::Theme::8337982000377895911::1783548132::0::1::::<><><>0<>0<><>::uid://b1bq3eoec0j1b::::res://addons/dialogue_nodes/themes/Poppins-Regular.ttf<>uid://dv4rnn0ml62q3::::res://addons/dialogue_nodes/themes/Poppins-Bold.ttf<>uid://bhtf12vvs2yjq::::res://addons/dialogue_nodes/themes/Poppins-BoldItalic.ttf<>uid://bcg26eik2m2o8::::res://addons/dialogue_nodes/themes/Poppins-Italic.ttf
@@ -108,7 +108,8 @@ Interactable.gd::GDScript::5524630742384981150::1783548132::0::1::::<>CSGBox3D<>
 Ponto branco.png::CompressedTexture2D::2943371035237078781::1783548132::1783549470::1::::<><><>0<>0<>0b0ed0775f63bff23e61fe1429e43913<>res://.godot/imported/Ponto branco.png-8890ded4f6b2f9d5fbb92fb5dde83e12.ctex::
 Textos.tres::Resource/DialogueData::5277326505783466693::1783558156::0::1::::<><>res://addons/dialogue_nodes/icons/Dialogue.svg<>0<>0<><>::uid://eit47g61t72a::::res://addons/dialogue_nodes/objects/DialogueData.gd
 ::res://Models/::1783548132
-::res://Models/Arquivos do quarto - blender/::1783617141
+::res://Models/Arquivos do quarto - blender/::1783712749
+Chave.glb::PackedScene::1076798978888541069::1783712749::1783712750::1::::<><><>0<>0<>76b8c2e6e78309e01e79c00803d0ee16<>res://.godot/imported/Chave.glb-3767c72493556703e6f34744c73d5ef2.scn::
 Mapa-mundi.glb::PackedScene::5258362600738598571::1783616559::1783616561::1::::<><><>0<>0<>c6382d2f850f19a4dc0f3d75b84af944<>res://.godot/imported/Mapa-mundi.glb-dcc94b26dcce919799793af479ae4408.scn::uid://c0g4emn4grxng::::res://Models/Arquivos do quarto - blender/Mapa-mundi_mapa-mundi.png
 Mapa-mundi_mapa-mundi.png::CompressedTexture2D::6541717312516217060::1783616560::1783616561::1::::<><><>0<>0<>2916f5733e7bfbe420a458c829d284b1<>res://.godot/imported/Mapa-mundi_mapa-mundi.png-63e66a6b4104ce29f1e82db2b2e3d01d.s3tc.ctex::
 QUARTO escala aplicada.glb::PackedScene::5423080017027708753::1783548132::1783549473::1::::<><><>0<>0<>674c72b440aa8a730f783d4a89395e8e<>res://.godot/imported/QUARTO escala aplicada.glb-dd33a5da213b815b12638455e9610fda.scn::uid://c88jkpiprd16i::::res://Models/Arquivos do quarto - blender/QUARTO escala aplicada_tiny_treats_texture_1.png<>uid://cxrgj12g3y635::::res://Models/Arquivos do quarto - blender/QUARTO escala aplicada_MDPaintedColorRed.jpg<>uid://dq1o2375yo0ws::::res://Models/Arquivos do quarto - blender/QUARTO escala aplicada_MDWoodTex_Roughness.png<>uid://cp6cbbfud4unc::::res://Models/Arquivos do quarto - blender/QUARTO escala aplicada_MDWoodTex_Normal_OpenGL.jpg<>uid://ca5li0bklvl0d::::res://Models/Arquivos do quarto - blender/QUARTO escala aplicada_MDWoodTex_Base_Color.jpg

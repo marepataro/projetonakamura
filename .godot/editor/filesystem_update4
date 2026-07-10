@@ -1,0 +1,4 @@
+res://Models/Conjunto cama/chave.tscn
+res://scenes/cena_principal.tscn
+res://Interact/Textos.tres
+res://Interact/dialogues.gd
