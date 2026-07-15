@@ -2,6 +2,7 @@
 
 [ext_resource type="Material" uid="uid://b8mixapm50jjw" path="res://assets/Parede quarto.tres" id="1_8ncq5"]
 [ext_resource type="PackedScene" uid="uid://bs72ogkvdd7d6" path="res://addons/proto_controller/proto_controller.tscn" id="2_8kwb5"]
+[ext_resource type="Material" uid="uid://by18di7plai0" path="res://assets/Cor teto.tres" id="2_bgpsv"]
 [ext_resource type="PackedScene" uid="uid://cwwn68pubel54" path="res://Models/Conjunto cama/cama.tscn" id="2_m1hkd"]
 [ext_resource type="PackedScene" uid="uid://bywqwqi1msswn" path="res://scenes/parede_com_porta.tscn" id="2_s0w2b"]
 [ext_resource type="Script" uid="uid://ddha0f55a8i71" path="res://scenes/Animação almofada.gd" id="3_c4d3c"]
@@ -40,9 +41,10 @@
 [ext_resource type="PackedScene" uid="uid://blcuqyl8m3k4k" path="res://Models/Conjunto criado mudo/gaveta_criado_mudo.tscn" id="25_s0w2b"]
 [ext_resource type="Script" uid="uid://b5lsevewvdrev" path="res://Interact/Interact.gd" id="26_1x4kn"]
 [ext_resource type="Script" uid="uid://cbqnjcgd8ctlc" path="res://Models/Conjunto criado mudo/Animação criado mudo.gd" id="26_dhvva"]
+[ext_resource type="PackedScene" uid="uid://c77gys1owwaxm" path="res://Models/Conjunto móvel/vaso_pendurado.tscn" id="29_gdbc1"]
 [ext_resource type="PackedScene" uid="uid://b4ywo5nwur4fc" path="res://Models/Outros/porta_2.tscn" id="31_3cqi0"]
 [ext_resource type="Script" uid="uid://b5lkvviqvxr8k" path="res://scenes/Animação porta.gd" id="31_dum1f"]
-[ext_resource type="PackedScene" uid="uid://big75gv3i3iyb" path="res://scenes/garden2.glb" id="43_rh6q5"]
+[ext_resource type="PackedScene" uid="uid://br0ft15e5oup0" path="res://scenes/Cena externa.tscn" id="43_rh6q5"]
 
 [sub_resource type="Gradient" id="Gradient_18kp0"]
 offsets = PackedFloat32Array(0, 0.17759563, 0.76775956, 1)
@@ -53,8 +55,10 @@ gradient = SubResource("Gradient_18kp0")
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_18kp0"]
 sky_top_color = Color(0.31900004, 0.41525003, 0.55, 1)
-sky_horizon_color = Color(0.67, 0.55576503, 0.44889998, 1)
-ground_horizon_color = Color(0.67058825, 0.5568628, 0.44705883, 1)
+sky_horizon_color = Color(0.5049168, 0.6126144, 0.52999747, 1)
+sky_curve = 0.022297617
+ground_horizon_color = Color(0.36703846, 0.41579732, 0.1114401, 1)
+ground_curve = 0.109283686
 
 [sub_resource type="Sky" id="Sky_q3ojg"]
 sky_material = SubResource("ProceduralSkyMaterial_18kp0")
@@ -73,13 +77,9 @@ adjustment_color_correction = SubResource("GradientTexture1D_gib8o")
 vertex_color_is_srgb = true
 albedo_color = Color(0.45, 0.366, 0.27, 1)
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_s5j6r"]
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8kwb5"]
 vertex_color_use_as_albedo = true
 albedo_color = Color(0.4509804, 0.3647059, 0.27058825, 1)
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m1hkd"]
 
 [sub_resource type="Animation" id="Animation_c4d3c"]
 tracks/0/type = "position_3d"
@@ -390,6 +390,7 @@ script = ExtResource("8_tlvlh")
 script = ExtResource("9_sro0o")
 
 [node name="Cena principal" type="Node3D" unique_id=2090727127]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.3787727, 0)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1146051201]
 environment = SubResource("Environment_18kp0")
@@ -430,14 +431,14 @@ size = Vector3(1, 2.591742, 1.2717774)
 material = ExtResource("1_8ncq5")
 
 [node name="ChãoCorredor" type="CSGBox3D" parent="Estrutura do quarto" unique_id=1285816294]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, -0.45, 0.65)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, -0.47002476, 0.65)
 size = Vector3(5.3, 0.1, 3.1000001)
 material = SubResource("StandardMaterial3D_8ncq5")
 
 [node name="Teto Corredor" type="CSGBox3D" parent="Estrutura do quarto" unique_id=205301191]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 3.25, 0.65)
 size = Vector3(5.3, 0.1, 3.1000001)
-material = SubResource("StandardMaterial3D_s5j6r")
+material = ExtResource("2_bgpsv")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Estrutura do quarto/Teto Corredor" unique_id=1036660035]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.29999995, 0)
@@ -451,11 +452,12 @@ size = Vector3(6.6, 0.1, 7.4)
 material = SubResource("StandardMaterial3D_8kwb5")
 
 [node name="Parede1" parent="Estrutura do quarto" unique_id=347257263 instance=ExtResource("2_s0w2b")]
-transform = Transform3D(1, 0.00017453292, 0, -0.00017453292, 1, 0, 0, 0, 1, 3.2500002, 1.35, 0.39999998)
+transform = Transform3D(1, 0.00017453292, 0, -0.00017453292, 1, 0, 0, 0, 1, 3.263827, 1.349999, 0.37581623)
+size = Vector3(0.10957031, 3.7, 7.4)
 
 [node name="Buraco da porta" parent="Estrutura do quarto/Parede1" index="0" unique_id=242376965]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4851429, 0.13197762)
-size = Vector3(1, 2.5697143, 1.2822754)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.536743e-07, -0.48514295, 0.14322644)
+size = Vector3(1, 2.5697143, 1.2597778)
 
 [node name="Parede2" type="CSGBox3D" parent="Estrutura do quarto" unique_id=788268448]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1920929e-07, 1.35, -3.25)
@@ -485,7 +487,7 @@ material = ExtResource("1_8ncq5")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.25, 0.4000002)
 use_collision = true
 size = Vector3(6.6, 0.1, 7.4)
-material = SubResource("StandardMaterial3D_m1hkd")
+material = ExtResource("2_bgpsv")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Estrutura do quarto/Teto Quarto" unique_id=1296405300]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.29999995, 0)
@@ -505,7 +507,7 @@ script = ExtResource("26_1x4kn")
 prompt_message = "Almofada"
 
 [node name="Chave" parent="Conjunto cama" unique_id=493095177 instance=ExtResource("4_r1plc")]
-transform = Transform3D(0.85349625, 0, -0.521099, 0, 1, 0, 0.521099, 0, 0.85349625, 0.7350048, 0.66785717, -1.9088482)
+transform = Transform3D(0.682797, 0, -0.41687918, 0, 0.8, 0, 0.41687918, 0, 0.682797, 0.7350048, 0.65221786, -1.9088482)
 script = ExtResource("26_1x4kn")
 prompt_message = "Chave do carro"
 
@@ -598,6 +600,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.641092, -0.39602482, 0.395
 [node name="Gaveta" parent="Conjunto móvel" unique_id=556676915 instance=ExtResource("7_xcb7i")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.637012, 0.71484804, -0.26420274)
 
+[node name="Vaso pendurado" parent="Conjunto móvel" unique_id=536169675 instance=ExtResource("29_gdbc1")]
+transform = Transform3D(0.09, 0, 0, 0, 0.09, 0, 0, 0, 0.09, -2.3436642, 2.0768433, -2.427489)
+
 [node name="Conjunto criado mudo" type="CSGCombiner3D" parent="." unique_id=1212602888]
 script = ExtResource("26_dhvva")
 
@@ -680,8 +685,20 @@ custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_jp66c"), Sub
 max_options_count = 2
 metadata/_custom_type_script = "uid://by8fmhpldj46a"
 
-[node name="garden2" parent="." unique_id=1484922772 instance=ExtResource("43_rh6q5")]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.5838146, -0.9124384, 0)
+[node name="Cena externa" parent="." unique_id=1778081710 instance=ExtResource("43_rh6q5")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.22448, -1.1073599, 0.11711979)
+
+[node name="Cena externa 2" parent="." unique_id=2112288369 instance=ExtResource("43_rh6q5")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.2144575, -1.1488507, 7.7827053)
+
+[node name="Cena externa 3" parent="." unique_id=301556955 instance=ExtResource("43_rh6q5")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.221661, -1.1090051, -7.5581894)
+
+[node name="Cena externa 4" parent="." unique_id=1290341598 instance=ExtResource("43_rh6q5")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.2144575, -1.1488507, 15.445139)
+
+[node name="Cena externa 5" parent="." unique_id=675923069 instance=ExtResource("43_rh6q5")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.2144575, -1.1488507, -15.229465)
 
 [connection signal="interacted" from="Conjunto cama/Almofada" to="Conjunto cama" method="almofada"]
 [connection signal="interacted" from="Conjunto cama/Chave" to="CanvasLayer" method="_on_chave_interacted"]
