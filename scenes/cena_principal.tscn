@@ -42,6 +42,7 @@
 [ext_resource type="Script" uid="uid://cbqnjcgd8ctlc" path="res://Models/Conjunto criado mudo/Animação criado mudo.gd" id="26_dhvva"]
 [ext_resource type="PackedScene" uid="uid://b4ywo5nwur4fc" path="res://Models/Outros/porta_2.tscn" id="31_3cqi0"]
 [ext_resource type="Script" uid="uid://b5lkvviqvxr8k" path="res://scenes/Animação porta.gd" id="31_dum1f"]
+[ext_resource type="PackedScene" uid="uid://big75gv3i3iyb" path="res://scenes/garden2.glb" id="43_rh6q5"]
 
 [sub_resource type="Gradient" id="Gradient_18kp0"]
 offsets = PackedFloat32Array(0, 0.17759563, 0.76775956, 1)
@@ -678,6 +679,9 @@ hide_portrait = true
 custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_jp66c"), SubResource("RichTextEffect_4e43v"), SubResource("RichTextEffect_oe06i")])
 max_options_count = 2
 metadata/_custom_type_script = "uid://by8fmhpldj46a"
+
+[node name="garden2" parent="." unique_id=1484922772 instance=ExtResource("43_rh6q5")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -7.5838146, -0.9124384, 0)
 
 [connection signal="interacted" from="Conjunto cama/Almofada" to="Conjunto cama" method="almofada"]
 [connection signal="interacted" from="Conjunto cama/Chave" to="CanvasLayer" method="_on_chave_interacted"]
