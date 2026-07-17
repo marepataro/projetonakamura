@@ -43,6 +43,7 @@
 [ext_resource type="Script" uid="uid://cbqnjcgd8ctlc" path="res://Models/Conjunto criado mudo/Animação criado mudo.gd" id="26_dhvva"]
 [ext_resource type="PackedScene" uid="uid://c77gys1owwaxm" path="res://Models/Conjunto móvel/vaso_pendurado.tscn" id="29_gdbc1"]
 [ext_resource type="PackedScene" uid="uid://b4ywo5nwur4fc" path="res://Models/Outros/porta_2.tscn" id="31_3cqi0"]
+[ext_resource type="PackedScene" uid="uid://mq8rl5upgup" path="res://Models/Conjunto criado mudo/diário.tscn" id="31_7c7cp"]
 [ext_resource type="Script" uid="uid://b5lkvviqvxr8k" path="res://scenes/Animação porta.gd" id="31_dum1f"]
 [ext_resource type="PackedScene" uid="uid://br0ft15e5oup0" path="res://scenes/Cena externa.tscn" id="43_rh6q5"]
 
@@ -605,6 +606,11 @@ transform = Transform3D(0.09, 0, 0, 0, 0.09, 0, 0, 0, 0.09, -2.3436642, 2.076843
 
 [node name="Conjunto criado mudo" type="CSGCombiner3D" parent="." unique_id=1212602888]
 script = ExtResource("26_dhvva")
+
+[node name="Diário" parent="Conjunto criado mudo" unique_id=599285338 instance=ExtResource("31_7c7cp")]
+transform = Transform3D(0.8776653, 0, 0.47927403, 0, 1, 0, -0.47927403, 0, 0.8776653, 2.2443585, 0.800416, -2.7272615)
+script = ExtResource("26_1x4kn")
+prompt_message = "Diário"
 
 [node name="Criado mudo" parent="Conjunto criado mudo" unique_id=1472946297 instance=ExtResource("24_gewwi")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2927155, -0.20618093, -3.1269634)

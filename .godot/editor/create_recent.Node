@@ -1,5 +1,5 @@
+CollisionShape3D
 StaticBody3D
 CSGCombiner3D
-CollisionShape3D
 AnimationTree
 AnimationPlayer
