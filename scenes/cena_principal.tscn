@@ -678,6 +678,7 @@ can_jump = false
 script = ExtResource("4_m1hkd")
 
 [node name="DialogueBox" type="Panel" parent="CanvasLayer" unique_id=1696492300]
+visible = false
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
