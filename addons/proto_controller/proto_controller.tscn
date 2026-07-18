@@ -8,11 +8,11 @@
 albedo_color = Color(0.91806, 0.575202, 0.222449, 1)
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_ucva2"]
-radius = 0.4
+radius = 0.35
 height = 1.8
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_iof21"]
-radius = 0.4
+radius = 0.35
 height = 1.8
 
 [node name="ProtoController" type="CharacterBody3D" unique_id=530941528]

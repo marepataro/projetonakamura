@@ -1,6 +1,7 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1784246408
+::res://::1784394339
 icon.svg::CompressedTexture2D::7081393343536532460::1783548132::1784153507::1::::<><><>0<>0<>c01b6b2a83ce2b16dbc2d1c633949e60<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+tela_como_jogar_1.gd::GDScript::244859735417712077::1784394339::0::1::::<>Node2D<><>0<>0<><>::
 sobreoprojeto.md::TextFile::-1::1783548132::0::1::::<><><>0<>0<><>::
 ::res://addons/::1783548132
 ::res://addons/dialogue_nodes/::1783548132
@@ -95,24 +96,36 @@ Poppins-Regular.ttf::FontFile::4214416702055673985::1783548132::1783549470::1:::
 README [INET].txt::TextFile::-1::1783548132::0::1::::<><><>0<>0<><>::
 tech-panel.png::CompressedTexture2D::5287935746960153760::1783548132::1783549470::1::::<><><>0<>0<>73d5608b2218be728b3b9701536fcc2b<>res://.godot/imported/tech-panel.png-df322ff8d4cdd09b72b66fe562c48ecd.ctex::
 tech.theme::Theme::7237156549206226654::1783548132::0::1::::<><><>0<>0<><>::uid://brjuyem5xyah4::::res://addons/dialogue_nodes/themes/Poppins-Regular.ttf<>uid://og0o4cnb7vne::::res://addons/dialogue_nodes/themes/tech-panel.png
-::res://addons/proto_controller/::1783548132
+::res://addons/proto_controller/::1784386518
 InteractRay.gd::GDScript::1124163568294620227::1783548132::0::1::::<>RayCast3D<><>0<>0<><>::
 proto_controller.gd::GDScript::385148723800283447::1783548132::0::1::::<>CharacterBody3D<><>0<>0<><>::
-proto_controller.tscn::PackedScene::3717544648773412845::1783548132::0::1::::<><><>0<>0<><>::uid://fqtlw0r7rbrj::::res://addons/proto_controller/proto_controller.gd<>uid://qas2sbr7pknj::::res://addons/proto_controller/InteractRay.gd<>uid://bh615j5wognld::::res://Interact/Ponto branco.png
-::res://assets/::1784156609
+proto_controller.tscn::PackedScene::3717544648773412845::1784386518::0::1::::<><><>0<>0<><>::uid://fqtlw0r7rbrj::::res://addons/proto_controller/proto_controller.gd<>uid://qas2sbr7pknj::::res://addons/proto_controller/InteractRay.gd<>uid://bh615j5wognld::::res://Interact/Ponto branco.png
+::res://assets/::1784394429
+Botão ache a chave do carro.png::CompressedTexture2D::8503060567712668055::1784391096::1784391097::1::::<><><>0<>0<>6ce525df9097214c27fc6e17e343904d<>res://.godot/imported/Botão ache a chave do carro.png-c442c89611a373e26460e5a9883382be.ctex::
+Botão começar.png::CompressedTexture2D::2556817616830684027::1784390107::1784390562::1::::<><><>0<>0<>5c50b2c6d52c00315cdc6d5666601ea6<>res://.godot/imported/Botão começar.png-b484b089ba2f0c4aa113cf2704bf7481.ctex::
+Botão como jogar.png::CompressedTexture2D::567818017059053360::1784389931::1784389932::1::::<><><>0<>0<>7634c9c38e42d5f7ea31df01c4830af5<>res://.godot/imported/Botão como jogar.png-8954379715cb12243e92c54ecd01355a.ctex::
+Botão continuar.png::CompressedTexture2D::2162608159536467898::1784391981::1784391982::1::::<><><>0<>0<>e95edbeec0d911c07c41640b65929807<>res://.godot/imported/Botão continuar.png-44f8f9714fed4b96d4356f220606dc42.ctex::
+Botão créditos.png::CompressedTexture2D::6206066211514816384::1784389931::1784389932::1::::<><><>0<>0<>3c2650f56aef45ed2e87dd9f70753ed0<>res://.godot/imported/Botão créditos.png-d538fd8013eb271b06558b8f65ac711d.ctex::
 Cor teto.tres::StandardMaterial3D::121371654149153649::1784154359::0::1::::<><><>0<>0<><>::
 Parede quarto.tres::StandardMaterial3D::4727951889757206100::1784156609::0::1::::<><><>0<>0<><>::
-Vaso pendurado.glb::PackedScene::4953895920177913535::1784156258::1784156258::1::::<><><>0<>0<>080337b5fc922545657e5048912ef1d3<>res://.godot/imported/Vaso pendurado.glb-ac8b3c615cd9455b6e657952aaa18e77.scn::
-::res://Interact/::1783713849
-dialogues.gd::GDScript::3589324430387584575::1783713349::0::1::::<>CanvasLayer<><>0<>0<><>::
+Tela como jogar 2.png::CompressedTexture2D::5185059701759713180::1784394429::1784394429::1::::<><><>0<>0<>050a0b513cf5c5982ca18fe7effe2031<>res://.godot/imported/Tela como jogar 2.png-4f0636471478ccd28affe7ebef53750d.ctex::
+Tela como jogar.png::CompressedTexture2D::831190939678005502::1784393981::1784393981::1::::<><><>0<>0<>d562a4a21fcb5e68deb3d88654c45469<>res://.godot/imported/Tela como jogar.png-7719c1001e7bd0f52223ee9211b606c6.ctex::
+Tela créditos.png::CompressedTexture2D::8042483890143196685::1784391692::1784391692::1::::<><><>0<>0<>7b9c3f8bab69f3d7d97a9fcc7d0ed0b2<>res://.godot/imported/Tela créditos.png-21723bff67e4013d95ad84ffe58b0398.ctex::
+tela inicial vazia.png::CompressedTexture2D::1052786035596471922::1784390540::1784390540::1::::<><><>0<>0<>267e804bdfa69a563e534e230d12f354<>res://.godot/imported/tela inicial vazia.png-8f322a53ff3a30df4dced479df48d03d.ctex::
+Tela inicial.png::CompressedTexture2D::7502521020118963047::1784387447::1784387448::1::::<><><>0<>0<>fe3993aeaf714b65f0873df9af491ec3<>res://.godot/imported/Tela inicial.png-63156e19f4aaa33375c1013012b2106e.ctex::
+Tela objetivo vazio.png::CompressedTexture2D::5165646003218766171::1784391177::1784391177::1::::<><><>0<>0<>3cc8ff218430921a6c97f2eb5e7bec90<>res://.godot/imported/Tela objetivo vazio.png-e113f5436faae9b4f295fa7a1e8dd1fb.ctex::
+Tela objetivo.png::CompressedTexture2D::8271589480607199845::1784391007::1784391007::1::::<><><>0<>0<>55be20fee79307ef941bdab50f4663a1<>res://.godot/imported/Tela objetivo.png-132c19bbcb1700fad825926ed98b6a72.ctex::
+::res://Interact/::1784394373
+dialogues.gd::GDScript::3589324430387584575::1784393235::0::1::::<>CanvasLayer<><>0<>0<><>::
 Interact.gd::GDScript::4515895307371496841::1783548132::0::1::::Interactable<>StaticBody3D<><>0<>0<><>::
 Interactable.gd::GDScript::5524630742384981150::1783548132::0::1::::<>CSGBox3D<><>0<>0<><>::
 Ponto branco.png::CompressedTexture2D::2943371035237078781::1783548132::1783549470::1::::<><><>0<>0<>0b0ed0775f63bff23e61fe1429e43913<>res://.godot/imported/Ponto branco.png-8890ded4f6b2f9d5fbb92fb5dde83e12.ctex::
-Textos.tres::Resource/DialogueData::5277326505783466693::1783713849::0::1::::<><>res://addons/dialogue_nodes/icons/Dialogue.svg<>0<>0<><>::uid://eit47g61t72a::::res://addons/dialogue_nodes/objects/DialogueData.gd
-::res://Models/::1784156865
-::res://Models/Arquivos do quarto - blender/::1784247761
+Textos.tres::Resource/DialogueData::5277326505783466693::1784394373::0::1::::<><>res://addons/dialogue_nodes/icons/Dialogue.svg<>0<>0<><>::uid://eit47g61t72a::::res://addons/dialogue_nodes/objects/DialogueData.gd
+::res://Models/::1784387324
+::res://Models/Arquivos do quarto - blender/::1784387324
 Chave.glb::PackedScene::1076798978888541069::1783712749::1783712750::1::::<><><>0<>0<>76b8c2e6e78309e01e79c00803d0ee16<>res://.godot/imported/Chave.glb-3767c72493556703e6f34744c73d5ef2.scn::
 diário.glb::PackedScene::6718847837906076618::1784247761::1784247762::1::::<><><>0<>0<>ff4b2950c09b5c08f76ffd26e9b12776<>res://.godot/imported/diário.glb-17edaa34e810161c4000c5c2a07fd16f.scn::uid://cmlwlxp66muge::::res://Models/Arquivos do quarto - blender/diário_CHAHIN_NOTEBOOK_TEXTURE.jpg
+diário_CHAHIN_NOTEBOOK_TEXTURE.jpg::CompressedTexture2D::5639172296570603408::1784247761::1784247762::1::::<><><>0<>0<>1e7106d6765d134e1cd53e9a68d0ef3f<>res://.godot/imported/diário_CHAHIN_NOTEBOOK_TEXTURE.jpg-2bb86b1402729f90661c2456948ba654.s3tc.ctex::
 Lustre.glb::PackedScene::5859250072794986149::1784157075::1784157146::1::::<><><>0<>0<>d959b4d8507a0913ceb3cf5ea6b618af<>res://.godot/imported/Lustre.glb-115042c84a4c7ecbfe2f4a8aef37c559.scn::uid://dohqpaf0lf6mo::::res://Models/Arquivos do quarto - blender/Lustre_Color.png<>uid://3g7wk4b7cgta::::res://Models/Arquivos do quarto - blender/Lustre_Metalness-Roughness.png<>uid://5g3mqqw7jpkk::::res://Models/Arquivos do quarto - blender/Lustre_Emission.png
 Lustre_Color.png::CompressedTexture2D::8157354773957851994::1784157076::1784157146::1::::<><><>0<>0<>d567159d83b8debd21aecfc088b8663a<>res://.godot/imported/Lustre_Color.png-66969ebb99f0d42cdd6f3c123885991b.s3tc.ctex::
 Lustre_Emission.png::CompressedTexture2D::2119773947122836386::1784157076::1784157146::1::::<><><>0<>0<>60ced5ba76020bf929b62a7bf4f48b01<>res://.godot/imported/Lustre_Emission.png-5e356c2382a4078f95fbacbf8d2ac727.s3tc.ctex::
@@ -125,26 +138,25 @@ QUARTO escala aplicada_MDWoodTex_Base_Color.jpg::CompressedTexture2D::4835456188
 QUARTO escala aplicada_MDWoodTex_Normal_OpenGL.jpg::CompressedTexture2D::5889793013273231844::1783548132::1783549470::1::::<><><>0<>0<>3fc093f45aa613eec946725177d6f018<>res://.godot/imported/QUARTO escala aplicada_MDWoodTex_Normal_OpenGL.jpg-c9d3ceda6e9acab2da56261b2604ce4d.s3tc.ctex::
 QUARTO escala aplicada_MDWoodTex_Roughness.png::CompressedTexture2D::8336857146710798226::1783548132::1783549470::1::::<><><>0<>0<>3aa4e75a3d7940808f043691a467ece3<>res://.godot/imported/QUARTO escala aplicada_MDWoodTex_Roughness.png-5b506b333a1550c8df2b3918f519a92a.s3tc.ctex::
 QUARTO escala aplicada_tiny_treats_texture_1.png::CompressedTexture2D::7157762785112276118::1783548132::1783549470::1::::<><><>0<>0<>495f2c84b4ab5689a02968e68dc7469e<>res://.godot/imported/QUARTO escala aplicada_tiny_treats_texture_1.png-be5cfeb8b7bab9618edade673bacc4b0.s3tc.ctex::
-diário_CHAHIN_NOTEBOOK_TEXTURE.jpg::CompressedTexture2D::5639172296570603408::1784247761::1784247762::1::::<><><>0<>0<>1e7106d6765d134e1cd53e9a68d0ef3f<>res://.godot/imported/diário_CHAHIN_NOTEBOOK_TEXTURE.jpg-2bb86b1402729f90661c2456948ba654.s3tc.ctex::
 Taxi.glb::PackedScene::5514702193319695531::1783617140::1783617141::1::::<><><>0<>0<>e3a9cb30f1bddec0c65581ad2f63ee24<>res://.godot/imported/Taxi.glb-3b5db0a83c9bcb8e164a6864cca827c9.scn::uid://b44gutyr0virr::::res://Models/Arquivos do quarto - blender/Taxi_PUSHILIN_taxi.png
 Taxi_PUSHILIN_taxi.png::CompressedTexture2D::4482165157724074955::1783617140::1783617141::1::::<><><>0<>0<>b2471ed7e20f2e3ad71749aba22c5345<>res://.godot/imported/Taxi_PUSHILIN_taxi.png-59d6c56a28872f346e21f9c9d73c4a40.s3tc.ctex::
-Vaso pendurado.glb::PackedScene::709683787972922324::1784156293::1784156294::1::::<><><>0<>0<>82599743db5c1d80b10429121bc9f62e<>res://.godot/imported/Vaso pendurado.glb-9673c7a486611099c88bdce4e3ade399.scn::
+Vaso pendurado.glb::PackedScene::4953895920177913535::1784156258::1784387324::1::::<><><>0<>0<>fd18def81f6835ed9275355f5b8bf68c<>res://.godot/imported/Vaso pendurado.glb-9673c7a486611099c88bdce4e3ade399.scn::
 vestido.glb::PackedScene::2206445584588376129::1783557037::1783557039::1::::<><><>0<>0<>fd8624c82c14ef9e4c66b410c21a62a2<>res://.godot/imported/vestido.glb-320c660870e0f462853e0cab4a4c110b.scn::uid://c44kh6xy00yrr::::res://Models/Arquivos do quarto - blender/vestido_texture_k1.png
 vestido_texture_k1.png::CompressedTexture2D::6868806123121099211::1783557038::1783557040::1::::<><><>0<>0<>409f2ff6f74b756a39a3172d0a1f40f8<>res://.godot/imported/vestido_texture_k1.png-b12e60da4679264c00b0f4b8077654a8.s3tc.ctex::
 ::res://Models/Conjunto armário/::1783557615
 armário.tscn::PackedScene::8729684925458995440::1783548132::0::1::::<><><>0<>0<><>::
 porta_armário.tscn::PackedScene::4779192801207891312::1783551153::0::1::::<><><>0<>0<><>::
 vestido.tscn::PackedScene::2941154832341881365::1783557615::0::1::::<><><>0<>0<><>::
-::res://Models/Conjunto cama/::1783712978
+::res://Models/Conjunto cama/::1784386368
 almofada.tscn::PackedScene::1357909646720199724::1783548132::0::1::::<><><>0<>0<><>::
-cama.tscn::PackedScene::6363258675882082229::1783548132::0::1::::<><><>0<>0<><>::
+cama.tscn::PackedScene::6363258675882082229::1784386368::0::1::::<><><>0<>0<><>::
 chave.tscn::PackedScene::89522794437414079::1783712978::0::1::::<><><>0<>0<><>::
-::res://Models/Conjunto criado mudo/::1784247001
+::res://Models/Conjunto criado mudo/::1784248075
 Animação criado mudo.gd::GDScript::4876865762636332100::1783550108::0::1::::<>CSGCombiner3D<><>0<>0<><>::
 criado_mudo.tscn::PackedScene::2127413366285921352::1783548132::0::1::::<><><>0<>0<><>::
+diário.tscn::PackedScene::25803847412029959::1784248075::0::1::::<><><>0<>0<><>::uid://cmlwlxp66muge::::res://Models/Arquivos do quarto - blender/diário_CHAHIN_NOTEBOOK_TEXTURE.jpg
 gaveta_criado_mudo.gd::GDScript::5205741746036762418::1783548132::0::1::::<>StaticBody3D<><>0<>0<><>::
 gaveta_criado_mudo.tscn::PackedScene::3163870910847154572::1783548132::0::1::::<><><>0<>0<><>::
-diário.tscn::PackedScene::25803847412029959::1784247001::0::1::::<><><>0<>0<><>::
 ::res://Models/Conjunto estante/::1783617249
 brincos.tscn::PackedScene::4418492355940023694::1783548132::0::1::::<><><>0<>0<><>::
 câmera.tscn::PackedScene::1714164463746397069::1783548132::0::1::::<><><>0<>0<><>::
@@ -171,16 +183,20 @@ janela.tscn::PackedScene::7897173469051947164::1783548132::0::1::::<><><>0<>0<><
 porta.glb::PackedScene::6330087745887951279::1783548132::1783549473::1::::<><><>0<>0<>b888c7cb884f9a202421ebd25323de19<>res://.godot/imported/porta.glb-2aba048b72d7adcb763c4171d60e9361.scn::
 porta_2.tscn::PackedScene::4472804587058975208::1783555329::0::1::::<><><>0<>0<><>::
 quadro.tscn::PackedScene::7034481030864865823::1783616794::0::1::::<><><>0<>0<><>::uid://c0g4emn4grxng::::res://Models/Arquivos do quarto - blender/Mapa-mundi_mapa-mundi.png
-::res://scenes/::1784157283
+::res://scenes/::1784394373
 Animação almofada.gd::GDScript::7384324181444694466::1783553167::0::1::::<>CSGCombiner3D<><>0<>0<><>::
 Animação armário.gd::GDScript::3623222208325392404::1783554001::0::1::::<>CSGCombiner3D<><>0<>0<><>::
 Animação porta.gd::GDScript::4515439935833140536::1783555927::0::1::::<>CSGCombiner3D<><>0<>0<><>::
 Cena externa.tscn::PackedScene::3631579396612813239::1784153899::0::1::::<><><>0<>0<><>::
-cena_principal.tscn::PackedScene::4576944291132300402::1784157283::0::1::::<><><>0<>0<><>::uid://b8mixapm50jjw::::res://assets/Parede quarto.tres<>uid://bs72ogkvdd7d6::::res://addons/proto_controller/proto_controller.tscn<>uid://by18di7plai0::::res://assets/Cor teto.tres<>uid://cwwn68pubel54::::res://Models/Conjunto cama/cama.tscn<>uid://bywqwqi1msswn::::res://scenes/parede_com_porta.tscn<>uid://ddha0f55a8i71::::res://scenes/Animação almofada.gd<>uid://tl1tq7ngt653::::res://Models/Conjunto cama/almofada.tscn<>uid://c47jnbga05gxq::::res://Models/Conjunto estante/Vaso.tscn<>uid://brexwcg11omyp::::res://Interact/dialogues.gd<>uid://bjmosamos4gp::::res://Models/Conjunto cama/chave.tscn<>uid://b3hkkb8xi2d5h::::res://Models/Conjunto estante/estante.tscn<>uid://by8fmhpldj46a::::res://addons/dialogue_nodes/objects/DialogueBox.gd<>uid://chgm2c1svntwv::::res://Interact/Textos.tres<>uid://dwmyvun2ox5ng::::res://Models/Conjunto armário/armário.tscn<>uid://kn8msap060dt::::res://Models/Conjunto móvel/móvel.tscn<>uid://bewsbriglkgsf::::res://Models/Conjunto estante/livro.tscn<>uid://cadcuv5470sb5::::res://Models/Conjunto armário/porta_armário.tscn<>uid://xyg83e87s17v::::res://Models/Conjunto móvel/gaveta.tscn<>uid://m31i3axecagx::::res://addons/dialogue_nodes/objects/bbcodeWait.gd<>uid://dkrpj78wiql4w::::res://Models/Outros/janela.tscn<>uid://0l6lkgjjqk5v::::res://Models/Conjunto estante/globo.tscn<>uid://bh5ynjjru2rvp::::res://Models/Conjunto armário/vestido.tscn<>uid://blmdt7v8bd0nl::::res://addons/dialogue_nodes/objects/bbcodeGhost.gd<>uid://bk5r1bsdpg2ll::::res://Models/Conjunto estante/matriosca.tscn<>uid://c7hs40kh5f8fj::::res://Models/Outros/quadro.tscn<>uid://bsoctnc26xumr::::res://addons/dialogue_nodes/objects/bbcodeMatrix.gd<>uid://2o6dihsb66qx::::res://Models/Outros/chinelo.tscn<>uid://bbhctky0i0vpd::::res://Models/Conjunto estante/taxi.tscn<>uid://3gakw053pha6::::res://Models/Conjunto estante/perfume.tscn<>uid://t7ulmwia7jay::::res://Models/Conjunto estante/pulseira.tscn<>uid://b37l6nvkqlgty::::res://Models/Conjunto estante/brincos.tscn<>uid://direbw6q7ikle::::res://Models/Conjunto estante/tablet.tscn<>uid://yombkimylmlp::::res://Models/Conjunto estante/câmera.tscn<>uid://bqcv65lej5ixh::::res://Models/Conjunto estante/suculenta.tscn<>uid://dd2bsqh6ya6co::::res://Models/Conjunto estante/tomate.tscn<>uid://dq517dhlk5irq::::res://Models/Conjunto estante/máquina_de_escrever.tscn<>uid://brvd68d7bw2qi::::res://scenes/Animação armário.gd<>uid://5ksgmstp3w7a::::res://Models/Conjunto criado mudo/criado_mudo.tscn<>uid://blcuqyl8m3k4k::::res://Models/Conjunto criado mudo/gaveta_criado_mudo.tscn<>uid://b5lsevewvdrev::::res://Interact/Interact.gd<>uid://cbqnjcgd8ctlc::::res://Models/Conjunto criado mudo/Animação criado mudo.gd<>uid://c77gys1owwaxm::::res://Models/Conjunto móvel/vaso_pendurado.tscn<>uid://b4ywo5nwur4fc::::res://Models/Outros/porta_2.tscn<>uid://b5lkvviqvxr8k::::res://scenes/Animação porta.gd<>uid://br0ft15e5oup0::::res://scenes/Cena externa.tscn
-parede_com_porta.tscn::PackedScene::4117380854875488209::1783555994::0::1::::<><><>0<>0<><>::uid://b8mixapm50jjw::::res://assets/Parede quarto.tres
+cena_principal.tscn::PackedScene::4576944291132300402::1784393344::0::1::::<><><>0<>0<><>::uid://b8mixapm50jjw::::res://assets/Parede quarto.tres<>uid://bs72ogkvdd7d6::::res://addons/proto_controller/proto_controller.tscn<>uid://by18di7plai0::::res://assets/Cor teto.tres<>uid://cwwn68pubel54::::res://Models/Conjunto cama/cama.tscn<>uid://bywqwqi1msswn::::res://scenes/parede_com_porta.tscn<>uid://ddha0f55a8i71::::res://scenes/Animação almofada.gd<>uid://tl1tq7ngt653::::res://Models/Conjunto cama/almofada.tscn<>uid://c47jnbga05gxq::::res://Models/Conjunto estante/Vaso.tscn<>uid://brexwcg11omyp::::res://Interact/dialogues.gd<>uid://bjmosamos4gp::::res://Models/Conjunto cama/chave.tscn<>uid://b3hkkb8xi2d5h::::res://Models/Conjunto estante/estante.tscn<>uid://by8fmhpldj46a::::res://addons/dialogue_nodes/objects/DialogueBox.gd<>uid://chgm2c1svntwv::::res://Interact/Textos.tres<>uid://dwmyvun2ox5ng::::res://Models/Conjunto armário/armário.tscn<>uid://kn8msap060dt::::res://Models/Conjunto móvel/móvel.tscn<>uid://bewsbriglkgsf::::res://Models/Conjunto estante/livro.tscn<>uid://cadcuv5470sb5::::res://Models/Conjunto armário/porta_armário.tscn<>uid://xyg83e87s17v::::res://Models/Conjunto móvel/gaveta.tscn<>uid://m31i3axecagx::::res://addons/dialogue_nodes/objects/bbcodeWait.gd<>uid://dkrpj78wiql4w::::res://Models/Outros/janela.tscn<>uid://0l6lkgjjqk5v::::res://Models/Conjunto estante/globo.tscn<>uid://bh5ynjjru2rvp::::res://Models/Conjunto armário/vestido.tscn<>uid://blmdt7v8bd0nl::::res://addons/dialogue_nodes/objects/bbcodeGhost.gd<>uid://bk5r1bsdpg2ll::::res://Models/Conjunto estante/matriosca.tscn<>uid://c7hs40kh5f8fj::::res://Models/Outros/quadro.tscn<>uid://bsoctnc26xumr::::res://addons/dialogue_nodes/objects/bbcodeMatrix.gd<>uid://2o6dihsb66qx::::res://Models/Outros/chinelo.tscn<>uid://bbhctky0i0vpd::::res://Models/Conjunto estante/taxi.tscn<>uid://3gakw053pha6::::res://Models/Conjunto estante/perfume.tscn<>uid://t7ulmwia7jay::::res://Models/Conjunto estante/pulseira.tscn<>uid://b37l6nvkqlgty::::res://Models/Conjunto estante/brincos.tscn<>uid://direbw6q7ikle::::res://Models/Conjunto estante/tablet.tscn<>uid://yombkimylmlp::::res://Models/Conjunto estante/câmera.tscn<>uid://bqcv65lej5ixh::::res://Models/Conjunto estante/suculenta.tscn<>uid://dd2bsqh6ya6co::::res://Models/Conjunto estante/tomate.tscn<>uid://dq517dhlk5irq::::res://Models/Conjunto estante/máquina_de_escrever.tscn<>uid://brvd68d7bw2qi::::res://scenes/Animação armário.gd<>uid://5ksgmstp3w7a::::res://Models/Conjunto criado mudo/criado_mudo.tscn<>uid://blcuqyl8m3k4k::::res://Models/Conjunto criado mudo/gaveta_criado_mudo.tscn<>uid://b5lsevewvdrev::::res://Interact/Interact.gd<>uid://cbqnjcgd8ctlc::::res://Models/Conjunto criado mudo/Animação criado mudo.gd<>uid://c77gys1owwaxm::::res://Models/Conjunto móvel/vaso_pendurado.tscn<>uid://b4ywo5nwur4fc::::res://Models/Outros/porta_2.tscn<>uid://mq8rl5upgup::::res://Models/Conjunto criado mudo/diário.tscn<>uid://b5lkvviqvxr8k::::res://scenes/Animação porta.gd<>uid://br0ft15e5oup0::::res://scenes/Cena externa.tscn
+parede_com_porta.tscn::PackedScene::4117380854875488209::1784250424::0::1::::<><><>0<>0<><>::
 porta.glb::PackedScene::4778413001861476161::1783548132::1783549473::1::::<><><>0<>0<>5d7e2c43bf27f37bc1ee003741056843<>res://.godot/imported/porta.glb-48e7df9171362728672a995731d223f0.scn::
+tela_como_jogar_2.tscn::PackedScene::2415691695024709880::1784394373::0::1::::<><><>0<>0<><>::
+tela_como_jogar_1.tscn::PackedScene::8749078407218964884::1784394286::0::1::::<><><>0<>0<><>::uid://dqu2lrc32sdh::::res://tela_como_jogar_1.gd<>uid://l3vuf5s5yx7c::::res://assets/Tela como jogar.png<>uid://52t3tsejcctm::::res://assets/Botão continuar.png
+tela_creditos.gd::GDScript::725095263936762740::1784392203::0::1::::<>Node2D<><>0<>0<><>::
+Tela_creditos.tscn::PackedScene::2514731202474020806::1784392203::0::1::::<><><>0<>0<><>::uid://dmt3sgb31t2e8::::res://assets/Tela créditos.png<>uid://klihikc2nghw::::res://scenes/tela_creditos.gd<>uid://52t3tsejcctm::::res://assets/Botão continuar.png
 sunset_jhbcentral_4k.exr::CompressedTexture2D::1591949506043185060::1783548132::1783549471::1::::<><><>0<>0<>3c978362a4fb2426be3bed1a03a95e75<>res://.godot/imported/sunset_jhbcentral_4k.exr-8006855ca34d9edaea3c1e2712d460dd.bptc.ctex::
-Tela inicial.tscn::PackedScene::5155535035650387628::1783548132::0::1::::<><><>0<>0<><>::uid://dwi84hwuwalok::::res://scenes/Tela_inicial.gd
+Tela inicial.tscn::PackedScene::5155535035650387628::1784393239::0::1::::<><><>0<>0<><>::uid://dwi84hwuwalok::::res://scenes/Tela_inicial.gd<>uid://de5jopm6o16r0::::res://assets/Tela inicial.png<>uid://bcosoa7trmk88::::res://assets/Botão começar.png<>uid://o88h5oc7aqdm::::res://assets/tela inicial vazia.png<>uid://idb46a68d66o::::res://assets/Botão como jogar.png<>uid://cuojaem2n1xt5::::res://assets/Botão créditos.png
 tela_de_objetivo.gd::GDScript::9220478187271250584::1783548132::0::1::::<>Node2D<><>0<>0<><>::
-Tela_de_objetivo.tscn::PackedScene::6775300819300930301::1783548132::0::1::::<><><>0<>0<><>::uid://d4mp6tqkrd0ci::::res://scenes/tela_de_objetivo.gd
-Tela_inicial.gd::GDScript::8721987484520298354::1783548132::0::1::::<>Node2D<><>0<>0<><>::
+Tela_de_objetivo.tscn::PackedScene::6775300819300930301::1784391495::0::1::::<><><>0<>0<><>::uid://d4mp6tqkrd0ci::::res://scenes/tela_de_objetivo.gd<>uid://dp324uamcw5tx::::res://assets/Tela objetivo.png<>uid://cfujo121kdmwh::::res://assets/Tela objetivo vazio.png<>uid://dte7fvaq4j2tn::::res://assets/Botão ache a chave do carro.png
+Tela_inicial.gd::GDScript::8721987484520298354::1784394052::0::1::::<>Node2D<><>0<>0<><>::

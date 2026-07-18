@@ -43,6 +43,12 @@ func _on_chave_interacted(body):
 	body.set_process_input(false)
 	player = body
 
+func _on_diário_interacted(body):
+	$DialogueBox.start("DIARIO")
+	body.set_physics_process(false)
+	body.set_process_input(false)
+	player = body
+
 func _on_dialogue_box_dialogue_ended():
 	player.set_physics_process(true)
 	player.set_process_input(true)

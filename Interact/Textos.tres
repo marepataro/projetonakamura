@@ -6,6 +6,7 @@
 script = ExtResource("1_dpavk")
 starts = {
 "CHAVE": &"0_7",
+"DIARIO": &"0_8",
 "MAQUINA": &"0_5",
 "MATRIOSCA": &"0_3",
 "PERFUME": &"0_4",
@@ -49,6 +50,11 @@ nodes = {
 "offset": Vector2(-60, 2120),
 "start_id": "CHAVE"
 },
+&"0_8": {
+"link": &"1_11",
+"offset": Vector2(-60, 2460),
+"start_id": "DIARIO"
+},
 &"1_1": {
 "dialogue": "Ninguém agua essa planta faz muito tempo… 
 (espaço)",
@@ -60,7 +66,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(439.99973, 325.99994),
+"size": Vector2(439.99985, 325.99988),
 "speaker": ""
 },
 &"1_10": {
@@ -74,7 +80,20 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.0001, 246.00024),
+"size": Vector2(300.00012, 286),
+"speaker": ""
+},
+&"1_11": {
+"dialogue": "Minha mãe sempre falava pra não mexer no diário dos outros… (espaço)",
+"offset": Vector2(240, 2460),
+"options": {
+0: {
+"condition": Array[Dictionary]([]),
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(419.99997, 246),
 "speaker": ""
 },
 &"1_2": {
@@ -88,7 +107,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(419.99997, 286.00018),
+"size": Vector2(420.0001, 286.00024),
 "speaker": ""
 },
 &"1_3": {
@@ -103,7 +122,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.0001, 286.00018),
+"size": Vector2(300.00012, 286.00024),
 "speaker": ""
 },
 &"1_4": {
@@ -117,7 +136,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(419.99997, 286.00012),
+"size": Vector2(420.0001, 286.00006),
 "speaker": ""
 },
 &"1_5": {
@@ -131,7 +150,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(419.99973, 285.99982),
+"size": Vector2(419.99985, 286),
 "speaker": ""
 },
 &"1_6": {
@@ -145,7 +164,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(419.99973, 286),
+"size": Vector2(419.99985, 286),
 "speaker": ""
 },
 &"1_7": {
@@ -159,7 +178,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(300.0001, 286),
+"size": Vector2(300.00012, 286),
 "speaker": ""
 },
 &"1_8": {
@@ -173,7 +192,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(419.99997, 286.00012),
+"size": Vector2(420.0001, 286),
 "speaker": ""
 },
 &"1_9": {
@@ -187,7 +206,7 @@ nodes = {
 "text": ""
 }
 },
-"size": Vector2(419.99997, 246.00024),
+"size": Vector2(420.0001, 286),
 "speaker": ""
 }
 }

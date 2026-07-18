@@ -403,25 +403,24 @@ light_energy = 0.7
 shadow_enabled = true
 
 [node name="Estrutura do quarto" type="CSGCombiner3D" parent="." unique_id=778058204]
-visible = false
 use_collision = true
 
 [node name="ParedeCorredor1" type="CSGBox3D" parent="Estrutura do quarto" unique_id=782248438]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 1.4, 2.0500002)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 1.4122262, 2.0500002)
 use_collision = true
 collision_mask = 1025
 size = Vector3(5.3, 3.6000001, 0.3)
 material = ExtResource("1_8ncq5")
 
 [node name="ParedeCorredor2" type="CSGBox3D" parent="Estrutura do quarto" unique_id=1974894407]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 1.4, -0.85)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 1.4122262, -0.85)
 use_collision = true
 collision_mask = 1025
 size = Vector3(5.3, 3.6000001, 0.1)
 material = ExtResource("1_8ncq5")
 
 [node name="ParedeCorredor3" type="CSGBox3D" parent="Estrutura do quarto" unique_id=1756158787]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.55, 1.4, 0.64999974)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.55, 1.4122262, 0.64999974)
 use_collision = true
 size = Vector3(0.1, 3.6000001, 2.9)
 material = ExtResource("1_8ncq5")
@@ -433,12 +432,12 @@ size = Vector3(1, 2.591742, 1.2717774)
 material = ExtResource("1_8ncq5")
 
 [node name="ChãoCorredor" type="CSGBox3D" parent="Estrutura do quarto" unique_id=1285816294]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, -0.47002476, 0.65)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, -0.45779872, 0.65)
 size = Vector3(5.3, 0.1, 3.1000001)
 material = SubResource("StandardMaterial3D_8ncq5")
 
 [node name="Teto Corredor" type="CSGBox3D" parent="Estrutura do quarto" unique_id=205301191]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 3.25, 0.65)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 3.262226, 0.65)
 size = Vector3(5.3, 0.1, 3.1000001)
 material = ExtResource("2_bgpsv")
 
@@ -456,10 +455,12 @@ material = SubResource("StandardMaterial3D_8kwb5")
 [node name="Parede1" parent="Estrutura do quarto" unique_id=347257263 instance=ExtResource("2_s0w2b")]
 transform = Transform3D(1, 0.00017453292, 0, -0.00017453292, 1, 0, 0, 0, 1, 3.263827, 1.349999, 0.37581623)
 size = Vector3(0.10957031, 3.7, 7.4)
+material = ExtResource("1_8ncq5")
 
 [node name="Buraco da porta" parent="Estrutura do quarto/Parede1" index="0" unique_id=242376965]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.536743e-07, -0.48514295, 0.14322644)
 size = Vector3(1, 2.5697143, 1.2597778)
+material = ExtResource("1_8ncq5")
 
 [node name="Parede2" type="CSGBox3D" parent="Estrutura do quarto" unique_id=788268448]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1920929e-07, 1.35, -3.25)
@@ -498,7 +499,7 @@ light_energy = 2.0
 shadow_enabled = true
 
 [node name="Conjunto cama" type="CSGCombiner3D" parent="." unique_id=774403651]
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.109417915, 0, 0)
 script = ExtResource("3_c4d3c")
 
 [node name="Cama" parent="Conjunto cama" unique_id=2095819401 instance=ExtResource("2_m1hkd")]
@@ -522,7 +523,6 @@ tree_root = SubResource("AnimationNodeStateMachine_fqcl4")
 anim_player = NodePath("../Animação almofada")
 
 [node name="Conjunto Estante" type="CSGCombiner3D" parent="." unique_id=1548671440]
-visible = false
 
 [node name="Estante" parent="Conjunto Estante" unique_id=1520195128 instance=ExtResource("5_f5ryu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.495, -0.322, 2.91)
@@ -574,7 +574,6 @@ script = ExtResource("26_1x4kn")
 prompt_message = "Máquina de escrever"
 
 [node name="Conjunto Armário" type="CSGCombiner3D" parent="." unique_id=662692195]
-visible = false
 script = ExtResource("22_fqcl4")
 
 [node name="Armário" parent="Conjunto Armário" unique_id=1877119163 instance=ExtResource("6_rc00d")]
@@ -598,7 +597,7 @@ tree_root = SubResource("AnimationNodeStateMachine_dum1f")
 anim_player = NodePath("../Animação armário")
 
 [node name="Conjunto móvel" type="CSGCombiner3D" parent="." unique_id=589146083]
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.066020966, 0, 0)
 
 [node name="Móvel" parent="Conjunto móvel" unique_id=218435020 instance=ExtResource("6_sro0o")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.641092, -0.39602482, 0.3953346)
@@ -610,7 +609,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.637012, 0.71484804, -0.264
 transform = Transform3D(0.09, 0, 0, 0, 0.09, 0, 0, 0, 0.09, -2.3436642, 2.0768433, -2.427489)
 
 [node name="Conjunto criado mudo" type="CSGCombiner3D" parent="." unique_id=1212602888]
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.109417915, 0, 0)
 script = ExtResource("26_dhvva")
 
 [node name="Diário" parent="Conjunto criado mudo" unique_id=599285338 instance=ExtResource("31_7c7cp")]
@@ -634,7 +633,6 @@ tree_root = SubResource("AnimationNodeStateMachine_3cqi0")
 anim_player = NodePath("../Animação criado mudo")
 
 [node name="Conjunto porta" type="CSGCombiner3D" parent="." unique_id=1040455139]
-visible = false
 script = ExtResource("31_dum1f")
 
 [node name="Porta2" parent="Conjunto porta" unique_id=1131692515 instance=ExtResource("31_3cqi0")]
@@ -651,7 +649,6 @@ anim_player = NodePath("../Animação porta")
 
 [node name="Porta" type="StaticBody3D" parent="." unique_id=162211363]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.142516, 0, 0)
-visible = false
 disable_mode = 1
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Porta" unique_id=1466961183]
@@ -664,17 +661,14 @@ mesh = SubResource("ArrayMesh_fpgfc")
 
 [node name="Janela" parent="." unique_id=1489983787 instance=ExtResource("8_0vce4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.2291603, 0.6880157, 0.38646984)
-visible = false
 
 [node name="Quadro" parent="." unique_id=1455696702 instance=ExtResource("9_rc00d")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.14996684, 2.1643038, -3.18)
-visible = false
 script = ExtResource("26_1x4kn")
 prompt_message = "Mapa-múndi"
 
 [node name="Chinelo" parent="." unique_id=1940150175 instance=ExtResource("10_d82hk")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.0669463, -0.4, -0.51960236)
-visible = false
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1763642, -0.39999998, -0.51960236)
 
 [node name="Player" parent="." unique_id=1931009505 instance=ExtResource("2_8kwb5")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6.9, -0.4, 0.8)
@@ -684,14 +678,13 @@ can_jump = false
 script = ExtResource("4_m1hkd")
 
 [node name="DialogueBox" type="Panel" parent="CanvasLayer" unique_id=1696492300]
-visible = false
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 410.0
+offset_left = 282.0
 offset_top = -162.0
-offset_right = -410.0
+offset_right = -282.0
 grow_horizontal = 2
 grow_vertical = 0
 theme = SubResource("Theme_jp66c")
@@ -704,121 +697,18 @@ metadata/_custom_type_script = "uid://by8fmhpldj46a"
 
 [node name="Cena externa" parent="." unique_id=1778081710 instance=ExtResource("43_rh6q5")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.22448, -1.1073599, 0.11711979)
-visible = false
 
 [node name="Cena externa 2" parent="." unique_id=2112288369 instance=ExtResource("43_rh6q5")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.2144575, -1.1488507, 7.7827053)
-visible = false
 
 [node name="Cena externa 3" parent="." unique_id=301556955 instance=ExtResource("43_rh6q5")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.221661, -1.1090051, -7.5581894)
-visible = false
 
 [node name="Cena externa 4" parent="." unique_id=1290341598 instance=ExtResource("43_rh6q5")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.2144575, -1.1488507, 15.445139)
-visible = false
 
 [node name="Cena externa 5" parent="." unique_id=675923069 instance=ExtResource("43_rh6q5")]
 transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.2144575, -1.1488507, -15.229465)
-visible = false
-
-[node name="Estrutura do quarto2" type="CSGCombiner3D" parent="." unique_id=578702645]
-use_collision = true
-
-[node name="ParedeCorredor1" type="CSGBox3D" parent="Estrutura do quarto2" unique_id=1483262527]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 1.4, 2.0500002)
-use_collision = true
-collision_mask = 1025
-size = Vector3(5.3, 3.6000001, 0.3)
-
-[node name="ParedeCorredor2" type="CSGBox3D" parent="Estrutura do quarto2" unique_id=1884826766]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 1.4, -0.85)
-use_collision = true
-collision_mask = 1025
-size = Vector3(5.3, 3.6000001, 0.1)
-
-[node name="ParedeCorredor3" type="CSGBox3D" parent="Estrutura do quarto2" unique_id=135047868]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.55, 1.4, 0.64999974)
-use_collision = true
-size = Vector3(0.1, 3.6000001, 2.9)
-
-[node name="Buraco da porta Corredor" type="CSGBox3D" parent="Estrutura do quarto2/ParedeCorredor3" unique_id=1936770756]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.4975518, -0.011865199)
-operation = 2
-size = Vector3(1, 2.591742, 1.2717774)
-material = ExtResource("1_8ncq5")
-
-[node name="ChãoCorredor" type="CSGBox3D" parent="Estrutura do quarto2" unique_id=811714035]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, -0.47002476, 0.65)
-size = Vector3(5.3, 0.1, 3.1000001)
-
-[node name="Teto Corredor" type="CSGBox3D" parent="Estrutura do quarto2" unique_id=1184162171]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.95, 3.25, 0.65)
-size = Vector3(5.3, 0.1, 3.1000001)
-material = ExtResource("2_bgpsv")
-
-[node name="OmniLight3D" type="OmniLight3D" parent="Estrutura do quarto2/Teto Corredor" unique_id=244134933]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.29999995, 0)
-visible = false
-light_color = Color(1, 0.8526667, 0.65999997, 1)
-shadow_enabled = true
-
-[node name="Chão" type="CSGBox3D" parent="Estrutura do quarto2" unique_id=828680335]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.45, 0.4000001)
-use_collision = true
-size = Vector3(6.6, 0.1, 7.4)
-
-[node name="Parede1" parent="Estrutura do quarto2" unique_id=1802317018 instance=ExtResource("2_s0w2b")]
-transform = Transform3D(1, 0.00017453292, 0, -0.00017453292, 1, 0, 0, 0, 1, 3.263827, 1.349999, 0.37581623)
-size = Vector3(0.10957031, 3.7, 7.4)
-
-[node name="Buraco da porta" parent="Estrutura do quarto2/Parede1" index="0" unique_id=242376965]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.536743e-07, -0.48514295, 0.14322644)
-size = Vector3(1, 2.5697143, 1.2597778)
-
-[node name="Parede2" type="CSGBox3D" parent="Estrutura do quarto2" unique_id=1398852801]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.1920929e-07, 1.35, -3.25)
-use_collision = true
-size = Vector3(6.4, 3.7, 0.1)
-
-[node name="Parede3" type="CSGBox3D" parent="Estrutura do quarto2" unique_id=1829172059]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.25, 1.35, 0.4000001)
-use_collision = true
-size = Vector3(0.1, 3.7, 7.4)
-
-[node name="Buraco janela" type="CSGBox3D" parent="Estrutura do quarto2/Parede3" unique_id=93452824]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.34691155, 0.02520132)
-operation = 2
-size = Vector3(1, 1.4938233, 2.7130249)
-
-[node name="Parede4" type="CSGBox3D" parent="Estrutura do quarto2" unique_id=1088543976]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.1920929e-07, 1.35, 4.05)
-use_collision = true
-size = Vector3(6.4, 3.7, 0.1)
-
-[node name="Teto Quarto" type="CSGBox3D" parent="Estrutura do quarto2" unique_id=605591923]
-transform = Transform3D(0.99989355, 0.014590435, 0, -0.014590435, 0.99989355, 0, 0, 0, 1, 0, 3.25, 0.4000002)
-use_collision = true
-size = Vector3(6.6, 0.1, 7.4)
-
-[node name="OmniLight3D" type="OmniLight3D" parent="Estrutura do quarto2/Teto Quarto" unique_id=1083474513]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.29999995, 0)
-visible = false
-light_color = Color(1, 0.8526667, 0.65999997, 1)
-light_energy = 2.0
-shadow_enabled = true
-
-[node name="CSGBox3D" type="CSGBox3D" parent="Estrutura do quarto2" unique_id=2017123319]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.3896484)
-size = Vector3(2.9450684, 1, 3.7792969)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="Estrutura do quarto2/CSGBox3D" unique_id=384808200]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.80098915, 0.82299805, 5.2181973)
-size = Vector3(2.1188965, 2.645996, 0.8161621)
-
-[node name="CSGBox3D2" type="CSGBox3D" parent="Estrutura do quarto2" unique_id=1522331599]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7637396, 0.12939453, 0.3000183)
-size = Vector3(1.0065918, 1.2587891, 3.3222656)
 
 [connection signal="interacted" from="Conjunto cama/Almofada" to="Conjunto cama" method="almofada"]
 [connection signal="interacted" from="Conjunto cama/Chave" to="CanvasLayer" method="_on_chave_interacted"]
@@ -828,10 +718,10 @@ size = Vector3(1.0065918, 1.2587891, 3.3222656)
 [connection signal="interacted" from="Conjunto Estante/Máquina de escrever" to="CanvasLayer" method="_on_máquina_de_escrever_interacted"]
 [connection signal="interacted" from="Conjunto Armário/Porta armário" to="Conjunto Armário" method="porta_armario"]
 [connection signal="interacted" from="Conjunto Armário/Vestido" to="CanvasLayer" method="_on_vestido_interacted"]
+[connection signal="interacted" from="Conjunto criado mudo/Diário" to="CanvasLayer" method="_on_diário_interacted"]
 [connection signal="interacted" from="Conjunto criado mudo/Gaveta criado mudo" to="Conjunto criado mudo" method="gaveta_criado_mudo"]
 [connection signal="interacted" from="Conjunto porta/Porta2" to="Conjunto porta" method="porta"]
 [connection signal="interacted" from="Quadro" to="CanvasLayer" method="_on_quadro_interacted"]
 [connection signal="dialogue_ended" from="CanvasLayer/DialogueBox" to="CanvasLayer" method="_on_dialogue_box_dialogue_ended"]
 
 [editable path="Estrutura do quarto/Parede1"]
-[editable path="Estrutura do quarto2/Parede1"]

@@ -1,3 +1,17 @@
-res://Models/Conjunto criado mudo/diário.tscn
+res://Interact/dialogues.gd
 res://scenes/cena_principal.tscn
-res://scenes/parede_com_porta.tscn
+res://Interact/Textos.tres
+res://Models/Conjunto cama/cama.tscn
+res://addons/proto_controller/proto_controller.tscn
+res://Models/Arquivos do quarto - blender/Vaso pendurado.glb
+res://scenes/Tela inicial.tscn
+res://scenes/Tela_inicial.gd
+res://scenes/Tela_de_objetivo.tscn
+res://scenes/Tela_creditos.tscn
+res://scenes/tela_creditos.gd
+res://scenes/tela_como_jogar_1.tscn
+res://tela_como_jogar_1.gd
+res://scenes/tela_como_jogar_2.tscn
+res://scenes/tela_como_jogar_2.gd
+res://scenes/tela_de_objetivo.gd
+res://scenes/tela_final.tscn
