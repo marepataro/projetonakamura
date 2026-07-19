@@ -45,6 +45,7 @@
 [ext_resource type="PackedScene" uid="uid://b4ywo5nwur4fc" path="res://Models/Outros/porta_2.tscn" id="31_3cqi0"]
 [ext_resource type="PackedScene" uid="uid://mq8rl5upgup" path="res://Models/Conjunto criado mudo/diário.tscn" id="31_7c7cp"]
 [ext_resource type="Script" uid="uid://b5lkvviqvxr8k" path="res://scenes/Animação porta.gd" id="31_dum1f"]
+[ext_resource type="FontFile" uid="uid://darkcn52u3ihc" path="res://assets/fonnts.com-Museo_Sans_Rounded_500.otf" id="41_futbk"]
 [ext_resource type="PackedScene" uid="uid://br0ft15e5oup0" path="res://scenes/Cena externa.tscn" id="43_rh6q5"]
 
 [sub_resource type="Gradient" id="Gradient_18kp0"]
@@ -375,10 +376,8 @@ _surfaces = [{
 blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_fdw6u")
 
-[sub_resource type="FontVariation" id="FontVariation_jp66c"]
-
 [sub_resource type="Theme" id="Theme_jp66c"]
-default_font = SubResource("FontVariation_jp66c")
+default_font = ExtResource("41_futbk")
 default_font_size = 20
 
 [sub_resource type="RichTextEffect" id="RichTextEffect_jp66c"]
@@ -678,7 +677,7 @@ can_jump = false
 script = ExtResource("4_m1hkd")
 
 [node name="DialogueBox" type="Panel" parent="CanvasLayer" unique_id=1696492300]
-visible = false
+self_modulate = Color(6.303029, 4.086723, 3.4451604, 1)
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -692,6 +691,7 @@ theme = SubResource("Theme_jp66c")
 script = ExtResource("5_k26n4")
 data = ExtResource("6_r1plc")
 hide_portrait = true
+scroll_speed = 8
 custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_jp66c"), SubResource("RichTextEffect_4e43v"), SubResource("RichTextEffect_oe06i")])
 max_options_count = 2
 metadata/_custom_type_script = "uid://by8fmhpldj46a"
